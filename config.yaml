@@ -95,7 +95,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: ID APIK 31.07
+  - name: ID APIK - 31.07
     server: id.vmes.xyz
     port: 443
     type: vmess
