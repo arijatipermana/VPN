@@ -1,0 +1,69 @@
+# Proxy Transparan
+tproxy-port: 9898
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: 'rule'
+allow-lan: true
+bind-address: "*"
+# info / warning / error / debug / silent
+log-level: 'silent'
+ipv6: true
+external-controller: '0.0.0.0:9090'
+external-ui: dashboard
+unified-delay: true
+# [Meta eksklusif] Gunakan geodata-mode: false
+# default geodata-mode: false
+geodata-mode: false
+# [Meta eksklusif] Koneksi TCP bersamaan,
+# Serentak semua IP, pilih IP dengan jabat tangan tercepat untuk terhubung
+tcp-concurrent: false
+secret: ""
+# Outbound interface name
+interface-name: ""
+dns:
+  enable: true
+  ipv6: true
+  # These nameservers are used to resolve the DNS nameserver hostnames below.
+  # Specify IP addresses only
+  default-nameserver:
+    - '1.1.1.1'
+    - '8.8.8.8'
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/15
+  # lookup hosts and return IP record
+  use-hosts: true
+  nameserver:
+    - '1.1.1.1'
+  nameserver-policy:
+    'cdn.onlymega.com': '112.215.203.248'
+    '+.onlymega.com': '112.215.203.248'
+  # This is a countermeasure against DNS pollution attacks.
+  fallback-filter:
+    geoip: false
+    geoip-code: 'ID'
+    ipcidr:
+      # - 240.0.0.0/4
+tun:
+  enable: false
+  # default utun
+  device: utun
+  # gvisor or system
+  stack: system
+  dns-hijack:
+    - 'any:53'
+  auto-route: false
+  auto-detect-interface: false
+sniffer:
+  enable: false
+  force: false
+  sniffing:
+    - tls
+    - http
+iptables:
+  # default false, don't set true
+  enable: false
+  inbound-interface: "lo"
+  bypass:
+  # - ***
