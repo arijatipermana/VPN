@@ -1,0 +1,18 @@
+proxies:
+  - name: Biznet 1
+    server: id2-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 6eaccf60-0e13-11ed-8894-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+    
+  - name: Biznet 2
+    server: id5-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 89a52340-0e13-11ed-b714-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
