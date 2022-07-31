@@ -1,0 +1,18 @@
+proxies:
+  - name: HE 1
+    server: sg1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 559e55d0-0fac-11ed-b1de-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+        
+  - name: HE 2
+    server: sg2-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 5a537df0-0fac-11ed-a756-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
