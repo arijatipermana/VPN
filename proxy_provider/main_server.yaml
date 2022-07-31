@@ -1,0 +1,120 @@
+proxies:
+  - name: SG HE
+    server: sg1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 41b0d880-0e13-11ed-9dc8-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+    
+  - name: SG OVH
+    server: sgovh-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 3b9aa3d0-ff0e-11ec-bb52-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+
+  - name: TH CAT
+    server: th1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 5f461f20-0da0-11ed-8f60-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+  
+  # Weekly
+  - name: ID Biznet - 07.08
+    server: id-lb.sshkit.org
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /sshkit/jsjjs/62e68abdb0c51/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+
+  - name: ID APIK - 31.07
+    server: id.vmes.xyz
+    port: 443
+    type: vmess
+    uuid: f36d7764-4913-4158-be1c-3965d479edaf
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
+  - name: SG AMP - 07.08
+    server: sg-atha.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /fastssh/jdhdb/62e689fc3c16d/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+
+  - name: SG LINODE OPTN - 07.08
+    server: sgv-1.openv2ray.com
+    port: 443
+    type: vmess
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /u/opentunnel.net-jzndbs
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
+  - name: SG LINODE HOWDY - 07.08
+    server: trojan3.udpgw.com
+    port: 443
+    type: trojan
+    password: 40b6c9a0-0f98-11ed-80bf-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+
+  - name: SG OVH gRPC - 24.08
+    server: sgmgrpc.serverssh.us
+    port: 443
+    type: vmess
+    uuid: 489c06f9-29cc-49b3-8899-3383d3392192
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
