@@ -1,0 +1,59 @@
+proxies:
+# Config CFM MIDO
+proxy-groups:
+  - name: Servers
+    type: select
+    proxies:
+      - Main Server
+      - SG Server
+      - ID Server
+  - name: Main Server
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "1. Main Server"
+  - name: SG Server
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "2. SG Server"
+  - name: ID Server
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "3. ID Server"
+proxy-providers:
+  "1. Main Server":
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/main_server.yaml"
+    interval: 30
+    path: ./proxy_provider/main_server.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  "2. SG Server":
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/mido_sg.yaml"
+    interval: 30
+    path: ./proxy_provider/lb_sg.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  "3. ID Server":
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/mido_id.yaml"
+    interval: 30
+    path: ./proxy_provider/lb_id.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+rules:
+  - MATCH,Servers
