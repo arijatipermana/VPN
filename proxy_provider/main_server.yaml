@@ -61,18 +61,18 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: ID AMP - 07.08
-    server: idx-1.openv2ray.com
+  - name: ID UNINET - 08.08
+    server: id-1.vless.co
     port: 443
     type: vless
-    uuid: 4f17e173-4af9-5041-9662-f6c27e0decfd
+    uuid: 81f1f510-3ca7-4734-8956-0f4fce670af5
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-iuiouj
+      path: /fastssh/kjkas/62e72ef4d8d47/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
