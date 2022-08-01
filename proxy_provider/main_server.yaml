@@ -61,22 +61,6 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: ID UNINET - 08.08
-    server: id-1.vless.co
-    port: 443
-    type: vless
-    uuid: 81f1f510-3ca7-4734-8956-0f4fce670af5
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /fastssh/kjkas/62e72ef4d8d47/
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-    
   - name: SG AMP - 07.08
     server: sg-atha.v2-ray.com
     port: 443
