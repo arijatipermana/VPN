@@ -31,7 +31,7 @@ proxy-providers:
   "1. Main Server":
     type: http
     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/main_server.yaml"
-    interval: 30
+    interval: 3600
     path: ./proxy_provider/main_server.yaml
     health-check:
       enable: true
@@ -40,7 +40,7 @@ proxy-providers:
   "2. SG Server":
     type: http
     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_sg.yaml"
-    interval: 30
+    interval: 3600
     path: ./proxy_provider/lb_sg.yaml
     health-check:
       enable: true
@@ -49,7 +49,7 @@ proxy-providers:
   "3. ID Server":
     type: http
     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_id.yaml"
-    interval: 30
+    interval: 3600
     path: ./proxy_provider/lb_id.yaml
     health-check:
       enable: true
