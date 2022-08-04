@@ -136,11 +136,11 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: SG OVH gRPC - 24.08
+  - name: SG OVH gRPC - 03.09
     server: sgmgrpc.serverssh.us
     port: 443
     type: vmess
-    uuid: 489c06f9-29cc-49b3-8899-3383d3392192
+    uuid: b2833d5d-d962-499b-801a-4474e034e140
     alterId: 0
     cipher: auto
     tls: true
