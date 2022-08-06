@@ -60,22 +60,6 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-   
-  - name: ID APIK - 08.08
-    server: idvless.ipservers.xyz
-    port: 443
-    type: vless
-    uuid: ad0f36b0-b435-4910-b16a-b8a7154edf0d
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
     
   - name: SG AMP - 07.08
     server: sg-atha.v2-ray.com
@@ -118,22 +102,6 @@ proxies:
     password: 40b6c9a0-0f98-11ed-80bf-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
-    udp: true
-    
-  - name: SG UDPGW - 08.08
-    server: sg2.vless.co
-    port: 443
-    type: vless
-    uuid: 81f1f510-3ca7-4734-8956-0f4fce670af5
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /fastssh/mjams/62e72619c9626/
-      headers:
-        Host: gz0.googleusercontent.com
     udp: true
 
   - name: SG OVH gRPC - 03.09
