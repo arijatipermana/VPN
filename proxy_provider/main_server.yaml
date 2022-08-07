@@ -27,7 +27,7 @@ proxies:
     udp: true
   
   # Weekly
-  - name: ID Biznet - 07.08
+  - name: ID Biznet - 14.08
     server: id-lb.sshkit.org
     port: 443
     type: vmess
@@ -39,7 +39,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/jsjjs/62e68abdb0c51/
+      path: /sshkit/jshahb/62efc46d22fc5/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -61,11 +61,11 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG AMP - 07.08
+  - name: SG AMP - 14.08
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    uuid: 5fc32973-a15e-404c-b1f7-707187f7fd6e
     alterId: 0
     cipher: auto
     tls: true
@@ -73,12 +73,12 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/jdhdb/62e689fc3c16d/
+      path: /fastssh/jzjhsbb/62efc3f23e368/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: SG LINODE OPTN - 07.08
+  - name: SG LINODE - 14.08
     server: sgv-1.openv2ray.com
     port: 443
     type: vmess
@@ -90,20 +90,28 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-jzndbs
+      path: /u/opentunnel.net-kdndjdjs
       headers:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG LINODE HOWDY - 07.08
-    server: trojan3.udpgw.com
+  - name: SG OVH - 14.08
+    server: sgv-2.openv2ray.com
     port: 443
-    type: trojan
-    password: 40b6c9a0-0f98-11ed-80bf-1239d0255272
+    type: vmess
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /u/opentunnel.net-jdjsna
+      headers:
+        Host: gz0.googleusercontent.com
     udp: true
-
+    
   - name: SG OVH gRPC - 03.09
     server: sgmgrpc.serverssh.us
     port: 443
