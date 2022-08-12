@@ -8,11 +8,11 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: SG OVH
-    server: sgovh-trojan.bonds.id
+  - name: ID HERZA
+    server: idtj-herza.bonds.id
     port: 443
     type: trojan
-    password: 3b9aa3d0-ff0e-11ec-bb52-1239d0255272
+    password: c1b25ce0-1a47-11ed-a17e-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
