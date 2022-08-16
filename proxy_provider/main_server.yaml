@@ -8,23 +8,23 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: ID Herza
-    server: idtj-herza.bonds.id
-    port: 443
-    type: trojan
-    password: 91ae2960-1d58-11ed-8067-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
+#   - name: ID Herza
+#     server: idtj-herza.bonds.id
+#     port: 443
+#     type: trojan
+#     password: 91ae2960-1d58-11ed-8067-1239d0255272
+#     skip-cert-verify: true
+#     sni: gz0.googleusercontent.com
+#     udp: true
     
-  - name: ID IKD
-    server: idtj-ikd.bonds.id
-    port: 443
-    type: trojan
-    password: 12b3ade0-1bdb-11ed-b458-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
+#   - name: ID IKD
+#     server: idtj-ikd.bonds.id
+#     port: 443
+#     type: trojan
+#     password: 12b3ade0-1bdb-11ed-b458-1239d0255272
+#     skip-cert-verify: true
+#     sni: gz0.googleusercontent.com
+#     udp: true
 
   - name: TH CAT
     server: th1-trojan.bonds.id
