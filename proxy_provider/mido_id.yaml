@@ -1,18 +1,18 @@
 proxies:
-  - name: Biznet 1
-    server: id2-trojan.bonds.id
+  - name: Herza
+    server: idtj-herza.bonds.id
     port: 443
     type: trojan
-    password: 6eaccf60-0e13-11ed-8894-1239d0255272
+    password: e460de00-1d59-11ed-9642-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: Biznet 2
-    server: id5-trojan.bonds.id
+  - name: IKD
+    server: idtj-ikd.bonds.id
     port: 443
     type: trojan
-    password: 89a52340-0e13-11ed-b714-1239d0255272
+    password: d17051a0-1d59-11ed-8fba-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
