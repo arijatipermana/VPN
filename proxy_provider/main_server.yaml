@@ -12,7 +12,7 @@ proxies:
     server: idtj-herza.bonds.id
     port: 443
     type: trojan
-    password: e8803f10-1b54-11ed-8f3f-1239d0255272
+    password: 91ae2960-1d58-11ed-8067-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
