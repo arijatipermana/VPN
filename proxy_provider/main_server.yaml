@@ -8,7 +8,7 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: ID HERZA
+  - name: ID Herza
     server: idtj-herza.bonds.id
     port: 443
     type: trojan
@@ -87,7 +87,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: SG LINODE - 21.08
+  - name: SG Linode - 21.08
     server: sgv-1.openv2ray.com
     port: 443
     type: vmess
