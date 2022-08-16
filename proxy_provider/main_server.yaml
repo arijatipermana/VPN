@@ -103,18 +103,3 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-    
-  - name: SG OVH gRPC - 03.09
-    server: sgmgrpc.serverssh.us
-    port: 443
-    type: vmess
-    uuid: b2833d5d-d962-499b-801a-4474e034e140
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
-    udp: true
