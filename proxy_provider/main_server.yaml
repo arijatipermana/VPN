@@ -52,6 +52,23 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
+    
+  - name: ID Herza - 23.08
+    server: id-herza.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /fastssh/jsjsbbsb/62fb8fd502f68/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
 
 #   - name: ID APIK - 14.08
 #     server: id.vmes.xyz
