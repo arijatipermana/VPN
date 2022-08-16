@@ -69,7 +69,24 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-
+    
+  - name: ID IKD - 23.08
+    server: id-ikd.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: afef92d5-b5b9-46aa-a982-3914fe62c1c5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /fastssh/hxhsbb/62fb958f9e64c/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
 #   - name: ID APIK - 14.08
 #     server: id.vmes.xyz
 #     port: 443
