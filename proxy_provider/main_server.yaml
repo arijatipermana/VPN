@@ -120,3 +120,12 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
+
+  - name: SG Linode 2
+    server: trojan1.udpgw.com
+    port: 443
+    type: trojan
+    password: 0a31cf50-1e7f-11ed-9291-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
