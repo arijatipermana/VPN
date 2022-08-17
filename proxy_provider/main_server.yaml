@@ -8,14 +8,14 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-#   - name: ID Herza
-#     server: idtj-herza.bonds.id
-#     port: 443
-#     type: trojan
-#     password: 91ae2960-1d58-11ed-8067-1239d0255272
-#     skip-cert-verify: true
-#     sni: gz0.googleusercontent.com
-#     udp: true
+  - name: ID Herza
+    server: idtj-herza.bonds.id
+    port: 443
+    type: trojan
+    password: 91ae2960-1d58-11ed-8067-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
     
 #   - name: ID IKD
 #     server: idtj-ikd.bonds.id
@@ -36,7 +36,7 @@ proxies:
     udp: true
   
   # Weekly
-  - name: ID Biznet - 21.08
+  - name: ID Biznet - 24.08
     server: id-lb.sshkit.org
     port: 443
     type: vmess
@@ -48,7 +48,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/jkajskd/62f834126722a/
+      path: /sshkit/sadeeer/62fc574366c43/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -70,11 +70,11 @@ proxies:
 #         Host: gz0.googleusercontent.com
 #     udp: true
     
-  - name: SG AMP - 21.08
+  - name: SG AMP - 24.08
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 656793c4-32ee-4caf-a393-6a9cc29d0d85
+    uuid: a0cbf383-de04-469b-8e0f-df7b0306d825
     alterId: 0
     cipher: auto
     tls: true
@@ -82,7 +82,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/ksjakd/62f833e70e607/
+      path: /fastssh/lkaksjdl/62fc5735cca22/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
