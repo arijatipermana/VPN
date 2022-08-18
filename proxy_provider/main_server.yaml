@@ -104,11 +104,11 @@ proxies:
 #         Host: gz0.googleusercontent.com
 #     udp: true
 
-  - name: SG Linode - 26.08
-    server: dynamic-sg2b.obfs.xyz
+  - name: SG Linode Vmess
+    server: v2ray1.udpgw.com
     port: 443
     type: vmess
-    uuid: fdf51d53-bc6e-4724-9ca0-527af8111b25
+    uuid: 2725f8e6-be44-48f5-9e30-59af4d026db2
     alterId: 0
     cipher: auto
     tls: true
@@ -116,16 +116,16 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh
+      path: /howdy
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-
-  - name: SG Linode 2
+    
+  - name: SG Linode Trojan
     server: trojan1.udpgw.com
     port: 443
     type: trojan
-    password: 0a31cf50-1e7f-11ed-9291-1239d0255272
+    password: fcb7f6e0-1e8a-11ed-b85f-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
