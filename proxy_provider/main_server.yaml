@@ -53,23 +53,6 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-#   - name: ID APIK - 14.08
-#     server: id.vmes.xyz
-#     port: 443
-#     type: vmess
-#     uuid: 8986dbbc-b143-4773-b43b-c9075daea305
-#     alterId: 0
-#     cipher: auto
-#     tls: true
-#     skip-cert-verify: true
-#     servername: gz0.googleusercontent.com
-#     network: ws
-#     ws-opts:
-#       path: /JAGOANSSH/
-#       headers:
-#         Host: gz0.googleusercontent.com
-#     udp: true
-    
   - name: SG AMP - 24.08
     server: sg-atha.v2-ray.com
     port: 443
