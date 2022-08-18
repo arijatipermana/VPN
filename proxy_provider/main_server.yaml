@@ -130,7 +130,7 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: DO
+  - name: DO - 02.09
     server: qt.gandring.my.id
     port: 443
     type: trojan
