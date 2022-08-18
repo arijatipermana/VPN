@@ -129,12 +129,3 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-    
-  - name: DO - 02.09
-    server: qt.gandring.my.id
-    port: 443
-    type: trojan
-    password: cef75b35-e745-45d0-9b74-9fb869e4d628
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
