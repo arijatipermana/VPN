@@ -28,16 +28,16 @@ proxies:
         Host: trojan1.udpgw.com
     udp: true
     
-  - name: ID Herza
+  - name: ID IKD
     server: 104.17.2.81
     port: 443
     type: trojan
-    password: 6aa68bc0-1fa1-11ed-80c9-1239d0255272
+    password: 7da449b0-20ff-11ed-aa75-1239d0255272
     skip-cert-verify: true
     sni: api.midtrans.com 
     network: ws
     ws-opts:
       path: ws://api.midtrans.com/howdy
       headers:
-        Host: idtj-herza.bonds.id
+        Host: idtj-ikd.bonds.id
     udp: true
