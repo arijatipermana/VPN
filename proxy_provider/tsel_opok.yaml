@@ -1,1 +1,43 @@
-
+proxies:
+  # Trojan Quota Based
+  - name: SG HE
+    server: 104.17.2.81 
+    port: 443
+    type: trojan
+    password: 56534830-1fa0-11ed-812e-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com 
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy 
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
+    
+  - name: SG Linode
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: fcb7f6e0-1e8a-11ed-b85f-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com 
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: trojan1.udpgw.com
+    udp: true
+    
+  - name: ID Herza
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: 6aa68bc0-1fa1-11ed-80c9-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com 
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: idtj-herza.bonds.id
+    udp: true
