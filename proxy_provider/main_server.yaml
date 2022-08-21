@@ -17,14 +17,14 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-#   - name: ID IKD
-#     server: idtj-ikd.bonds.id
-#     port: 443
-#     type: trojan
-#     password: 12b3ade0-1bdb-11ed-b458-1239d0255272
-#     skip-cert-verify: true
-#     sni: gz0.googleusercontent.com
-#     udp: true
+  - name: ID IKD
+    server: idtj-ikd.bonds.id
+    port: 443
+    type: trojan
+    password: 12b3ade0-1bdb-11ed-b458-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
 
   - name: TH CAT
     server: th1-trojan.bonds.id
