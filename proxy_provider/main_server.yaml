@@ -8,14 +8,14 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-#   - name: ID Herza
-#     server: idtj-herza.bonds.id
-#     port: 443
-#     type: trojan
-#     password: 91ae2960-1d58-11ed-8067-1239d0255272
-#     skip-cert-verify: true
-#     sni: gz0.googleusercontent.com
-#     udp: true
+  - name: ID Herza XL
+    server: idtj-herza.bonds.id
+    port: 443
+    type: trojan
+    password: 91ae2960-1d58-11ed-8067-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
     
 #   - name: ID IKD
 #     server: idtj-ikd.bonds.id
@@ -88,14 +88,33 @@ proxies:
     udp: true
 
 
-### Telkomsel Zero ###
+### Telkomsel Zero ###    
   - name: SG HE Tsel
-    server: sg1-trojan.bonds.id
+    server: 104.17.2.81
     port: 443
     type: trojan
     password: b9e473b0-2331-11ed-abd8-1239d0255272
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    sni: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
+    
+  - name: ID Herza Tsel
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: a4e26c60-2332-11ed-8b77-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: idtj-herza.bonds.id
     udp: true
 
   - name: ID Biznet Tsel 31.08
