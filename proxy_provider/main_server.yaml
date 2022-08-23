@@ -1,5 +1,5 @@
 proxies:
-  - name: SG HE
+  - name: SG HE XL
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
@@ -8,14 +8,14 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: ID Herza
-    server: idtj-herza.bonds.id
-    port: 443
-    type: trojan
-    password: 91ae2960-1d58-11ed-8067-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
+#   - name: ID Herza
+#     server: idtj-herza.bonds.id
+#     port: 443
+#     type: trojan
+#     password: 91ae2960-1d58-11ed-8067-1239d0255272
+#     skip-cert-verify: true
+#     sni: gz0.googleusercontent.com
+#     udp: true
     
 #   - name: ID IKD
 #     server: idtj-ikd.bonds.id
@@ -36,7 +36,7 @@ proxies:
 #     udp: true
   
   # Weekly
-  - name: ID Biznet - 30.08
+  - name: ID Biznet XL - 31.08
     server: id-lb.vhax.net
     port: 443
     type: vmess
@@ -48,16 +48,16 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/jslajde/6304a95fb138f/
+      path: /sshkit/jlskaj/63055246a4389/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG AMP - 24.08
+  - name: SG AMP XL - 31.08
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: a0cbf383-de04-469b-8e0f-df7b0306d825
+    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
     alterId: 0
     cipher: auto
     tls: true
@@ -65,12 +65,12 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/lkaksjdl/62fc5735cca22/
+      path: /fastssh/klasjd/63055231054b6/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: SG Linode
+  - name: SG Linode XL
     server: v2ray1.udpgw.com
     port: 443
     type: vmess
@@ -87,7 +87,18 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: ID Biznet Tsel 30.08
+
+### Telkomsel Zero ###
+  - name: SG HE Tsel
+    server: sg1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: b9e473b0-2331-11ed-abd8-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+
+  - name: ID Biznet Tsel 31.08
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -99,12 +110,29 @@ proxies:
     servername: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/sshkit/llsdras/6304a9f0be4db/
+      path: ws://api.midtrans.com/sshkit/jlskaj/63055246a4389/
       headers:
         Host: id-lb.vhax.net
     udp: true
     
-  - name: SG Linode Tsel 26.08
+  - name: SG AMP Tsel 31.08
+    server: 104.17.2.81
+    port: 443
+    type: vmess
+    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/fastssh/klasjd/63055231054b6/
+      headers:
+        Host: sg-atha.v2-ray.com
+    udp: true
+    
+  - name: SG Linode Tsel
     server: 104.17.2.81
     port: 443
     type: vmess
