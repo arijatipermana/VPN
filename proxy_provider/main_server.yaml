@@ -87,7 +87,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: ID Tsel 30.08
+  - name: ID Biznet Tsel 30.08
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -102,4 +102,21 @@ proxies:
       path: ws://api.midtrans.com/sshkit/llsdras/6304a9f0be4db/
       headers:
         Host: id-lb.vhax.net
+    udp: true
+    
+  - name: SG Linode Tsel 26.08
+    server: 104.17.2.81
+    port: 443
+    type: vmess
+    uuid: 99a1df06-0bfb-4cef-80f4-57db0509b280
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: v2ray1.udpgw.com
     udp: true
