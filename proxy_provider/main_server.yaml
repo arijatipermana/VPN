@@ -17,27 +17,27 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: ID IKD
-    server: idtj-ikd.bonds.id
-    port: 443
-    type: trojan
-    password: 12b3ade0-1bdb-11ed-b458-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
+#   - name: ID IKD
+#     server: idtj-ikd.bonds.id
+#     port: 443
+#     type: trojan
+#     password: 12b3ade0-1bdb-11ed-b458-1239d0255272
+#     skip-cert-verify: true
+#     sni: gz0.googleusercontent.com
+#     udp: true
 
-  - name: TH CAT
-    server: th1-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 5f461f20-0da0-11ed-8f60-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
+#   - name: TH CAT
+#     server: th1-trojan.bonds.id
+#     port: 443
+#     type: trojan
+#     password: 5f461f20-0da0-11ed-8f60-1239d0255272
+#     skip-cert-verify: true
+#     sni: gz0.googleusercontent.com
+#     udp: true
   
   # Weekly
-  - name: ID Biznet - 24.08
-    server: id-lb.sshkit.org
+  - name: ID Biznet - 30.08
+    server: id-lb.vhax.net
     port: 443
     type: vmess
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -48,7 +48,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/sadeeer/62fc574366c43/
+      path: /sshkit/jslajde/6304a95fb138f/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -85,4 +85,21 @@ proxies:
       path: /howdy
       headers:
         Host: gz0.googleusercontent.com
+    udp: true
+
+  - name: ID Tsel 30.08
+    server: 104.17.2.81
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/sshkit/llsdras/6304a9f0be4db/
+      headers:
+        Host: id-lb.vhax.net
     udp: true
