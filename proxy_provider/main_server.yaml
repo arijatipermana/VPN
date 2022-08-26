@@ -57,7 +57,7 @@ proxies:
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    uuid: b80925d6-40fa-4161-9e32-3550965527fd
     alterId: 0
     cipher: auto
     tls: true
@@ -65,7 +65,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/klasjd/63055231054b6/
+      path: /fastssh/kjlasjd/6308af37780a4/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
