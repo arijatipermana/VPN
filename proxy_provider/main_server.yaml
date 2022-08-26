@@ -48,7 +48,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/jlskaj/63055246a4389/
+      path: /sshkit/shhshs/6308be90783a7/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
