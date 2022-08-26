@@ -101,21 +101,7 @@ proxies:
       path: ws://api.midtrans.com/howdy
       headers:
         Host: sg1-trojan.bonds.id
-    udp: true
-    
-  - name: ID Herza Tsel
-    server: 104.17.2.81
-    port: 443
-    type: trojan
-    password: a4e26c60-2332-11ed-8b77-1239d0255272
-    skip-cert-verify: true
-    sni: api.midtrans.com
-    network: ws
-    ws-opts:
-      path: ws://api.midtrans.com/howdy
-      headers:
-        Host: idtj-herza.bonds.id
-    udp: true
+    udp: true    
 
   - name: ID Biznet Tsel 31.08
     server: 104.17.2.81
@@ -129,7 +115,24 @@ proxies:
     servername: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/sshkit/jlskaj/63055246a4389/
+      path: ws://api.midtrans.com/sshkit/shhshs/6308be90783a7/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+    
+  - name: SG HE Tsel 31.08
+    server: 104.17.2.81
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/sshkit/jdjdnna/6308bea3454de/
       headers:
         Host: id-lb.vhax.net
     udp: true
