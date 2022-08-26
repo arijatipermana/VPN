@@ -53,6 +53,23 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
+  - name: SG HE XL - 31.08
+    server: sg-lb.vhax.net
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /sshkit/jdjdnna/6308bea3454de/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
   - name: SG AMP XL - 31.08
     server: sg-atha.v2-ray.com
     port: 443
