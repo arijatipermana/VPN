@@ -53,7 +53,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG HE XL - 31.08
+  - name: SG OVH XL - 31.08
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -137,7 +137,7 @@ proxies:
         Host: id-lb.vhax.net
     udp: true
     
-  - name: SG HE Tsel 31.08
+  - name: SG OVH Tsel 31.08
     server: 104.17.2.81
     port: 443
     type: vmess
