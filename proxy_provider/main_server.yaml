@@ -134,7 +134,7 @@ proxies:
     ws-opts:
       path: ws://api.midtrans.com/sshkit/jdjdnna/6308bea3454de/
       headers:
-        Host: id-lb.vhax.net
+        Host: sg-lb.vhax.net
     udp: true
     
   - name: SG AMP Tsel 31.08
