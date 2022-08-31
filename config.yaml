@@ -1,0 +1,25 @@
+proxies:
+# dual provider
+proxy-groups:
+  - name: Servers
+    type: select
+    proxies:
+      - Main Server
+  - name: Main Server
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "1. Main Server"
+ proxy-providers:
+  "1. Main Server":
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/main_server.yaml"
+    interval: 3600
+    path: ./proxy_provider/main_server.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+rules:
+  - MATCH,Servers
