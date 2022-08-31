@@ -11,7 +11,7 @@ proxy-groups:
     interval: 300
     use:
       - "1. Main Server"
- proxy-providers:
+proxy-providers:
   "1. Main Server":
     type: http
     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/main_server.yaml"
