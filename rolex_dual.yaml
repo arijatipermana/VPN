@@ -5,44 +5,28 @@ proxy-groups:
     type: select
     proxies:
       - Main Server
-      - XL SG
-      - XL ID
-      - Tsel SG
-      - Tsel ID
+      - XL Axiata
+      - Telkomsel
   - name: Main Server
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "1. Main Server"
-  - name: XL SG
+  - name: XL Axiata
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
-      - "2. XL SG"
-  - name: XL ID
+      - "2. XL Axiata"
+  - name: Telkomsel
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
-      - "3. XL ID"
-  - name: Tsel SG
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - "4. Tsel SG"
-  - name: Tsel ID
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - "5. Tsel ID"
+      - "3. Telkomsel"
 proxy-providers:
   "1. Main Server":
     type: http
@@ -53,41 +37,25 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  "2. XL SG":
+  "2. XL Axiata":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_sg.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/xl_axiata.yaml"
     interval: 3600
-    path: ./proxy_provider/lb_sg.yaml
+    path: ./proxy_provider/xl_axiata.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  "3. XL ID":
+  "3. Telkomsel":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_id.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/telkomsel.yaml"
     interval: 3600
-    path: ./proxy_provider/lb_id.yaml
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  "4. Tsel SG":
-    type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/tsel_sg.yaml"
-    interval: 3600
-    path: ./proxy_provider/tsel_sg.yaml
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  "5. Tsel ID":
-    type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/tsel_id.yaml"
-    interval: 3600
-    path: ./proxy_provider/tsel_id.yaml
+    path: ./proxy_provider/telkomsel.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
 rules:
+  - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
+  - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
