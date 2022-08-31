@@ -1,0 +1,26 @@
+proxies:
+  - name: 🔵 HE-1
+    server: sg1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 4d6398d0-291e-11ed-a054-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+        
+  - name: 🔵 Linode
+    server: v2ray1.udpgw.com
+    port: 443
+    type: vmess
+    uuid: 2e620637-d194-4f23-ac04-e75cc700b1a1
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
