@@ -1,42 +1,15 @@
-proxies:
-  - name: SG HE XL
+### XL Axiata ###
+  - name: 🔵 SG HE
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
-    password: 41b0d880-0e13-11ed-9dc8-1239d0255272
+    password: c385dc70-2920-11ed-ad26-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-    
-  - name: ID Herza XL
-    server: idtj-herza.bonds.id
-    port: 443
-    type: trojan
-    password: 91ae2960-1d58-11ed-8067-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
-    
-#   - name: ID IKD
-#     server: idtj-ikd.bonds.id
-#     port: 443
-#     type: trojan
-#     password: 12b3ade0-1bdb-11ed-b458-1239d0255272
-#     skip-cert-verify: true
-#     sni: gz0.googleusercontent.com
-#     udp: true
-
-#   - name: TH CAT
-#     server: th1-trojan.bonds.id
-#     port: 443
-#     type: trojan
-#     password: 5f461f20-0da0-11ed-8f60-1239d0255272
-#     skip-cert-verify: true
-#     sni: gz0.googleusercontent.com
-#     udp: true
   
   # Weekly
-  - name: ID Biznet XL - 31.08
+  - name: 🔵 ID Biznet - 07.09
     server: id-lb.vhax.net
     port: 443
     type: vmess
@@ -48,12 +21,12 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/shhshs/6308be90783a7/
+      path: /sshkit/jaksd/630f479aa8fa8/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG OVH XL - 31.08
+  - name: 🔵 SG OVH - 07.09
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -65,16 +38,16 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/jdjdnna/6308bea3454de/
+      path: /sshkit/hjakshd/630f47c6dd92d/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG AMP XL - 31.08
+  - name: 🔵 SG AMP - 07.09
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: b80925d6-40fa-4161-9e32-3550965527fd
+    uuid: a0cbf383-de04-469b-8e0f-df7b0306d825
     alterId: 0
     cipher: auto
     tls: true
@@ -82,16 +55,16 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/kjlasjd/6308af37780a4/
+      path: /fastssh/kjkas/630f4824b1651/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: SG Linode XL
+  - name: 🔵 SG Linode
     server: v2ray1.udpgw.com
     port: 443
     type: vmess
-    uuid: 2725f8e6-be44-48f5-9e30-59af4d026db2
+    uuid: 9dd120f2-d06e-41d0-a5a1-73fbe26640ea
     alterId: 0
     cipher: auto
     tls: true
@@ -105,12 +78,12 @@ proxies:
     udp: true
 
 
-### Telkomsel Zero ###    
-  - name: SG HE Tsel
+  ### Telkomsel ###    
+  - name: 🔴 SG HE
     server: 104.17.2.81
     port: 443
     type: trojan
-    password: b9e473b0-2331-11ed-abd8-1239d0255272
+    password: dcddbf40-2920-11ed-bdb3-1239d0255272
     skip-cert-verify: true
     sni: api.midtrans.com
     network: ws
@@ -118,9 +91,10 @@ proxies:
       path: ws://api.midtrans.com/howdy
       headers:
         Host: sg1-trojan.bonds.id
-    udp: true    
+    udp: true
 
-  - name: ID Biznet Tsel 31.08
+  # Weekly
+  - name: 🔴 ID Biznet - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -132,12 +106,12 @@ proxies:
     servername: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/sshkit/shhshs/6308be90783a7/
+      path: ws://api.midtrans.com/sshkit/jaksd/630f479aa8fa8/
       headers:
         Host: id-lb.vhax.net
     udp: true
     
-  - name: SG OVH Tsel 31.08
+  - name: 🔴 SG OVH - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -149,16 +123,16 @@ proxies:
     servername: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/sshkit/jdjdnna/6308bea3454de/
+      path: ws://api.midtrans.com/sshkit/hjakshd/630f47c6dd92d/
       headers:
         Host: sg-lb.vhax.net
     udp: true
     
-  - name: SG AMP Tsel 31.08
+  - name: 🔴 SG AMP - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
-    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    uuid: a0cbf383-de04-469b-8e0f-df7b0306d825
     alterId: 0
     cipher: auto
     tls: true
@@ -166,16 +140,16 @@ proxies:
     servername: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/fastssh/klasjd/63055231054b6/
+      path: ws://api.midtrans.com/fastssh/kjkas/630f4824b1651/
       headers:
         Host: sg-atha.v2-ray.com
     udp: true
     
-  - name: SG Linode Tsel
+  - name: 🔴 SG Linode
     server: 104.17.2.81
     port: 443
     type: vmess
-    uuid: 99a1df06-0bfb-4cef-80f4-57db0509b280
+    uuid: 9dd120f2-d06e-41d0-a5a1-73fbe26640ea
     alterId: 0
     cipher: auto
     tls: true
