@@ -1,4 +1,5 @@
-### XL Axiata ###
+proxies:
+  ### XL Axiata ###
   - name: 🔵 SG HE
     server: sg1-trojan.bonds.id
     port: 443
