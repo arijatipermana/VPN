@@ -1,5 +1,5 @@
 proxies:
-  - name: HE Tsel
+  - name: 🔴 HE-1
     server: 104.17.2.81
     port: 443
     type: trojan
@@ -13,7 +13,7 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
     
-  - name: Linode Tsel
+  - name: 🔴 Linode
     server: 104.17.2.81
     port: 443
     type: vmess
