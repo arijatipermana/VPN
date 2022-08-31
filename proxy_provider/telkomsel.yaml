@@ -1,17 +1,17 @@
 proxies:
-  # - name: 🔴 HE-1
-  #   server: 104.17.2.81
-  #   port: 443
-  #   type: trojan
-  #   password: 9a385640-21c1-11ed-9fa5-1239d0255272
-  #   skip-cert-verify: true
-  #   sni: api.midtrans.com
-  #   network: ws
-  #   ws-opts:
-  #     path: ws://api.midtrans.com/howdy
-  #     headers:
-  #       Host: sg1-trojan.bonds.id
-  #   udp: true
+   - name: 🔴 HE-1
+     server: 104.17.2.81
+     port: 443
+     type: trojan
+     password: 9a385640-21c1-11ed-9fa5-1239d0255272
+     skip-cert-verify: true
+     sni: api.midtrans.com
+     network: ws
+     ws-opts:
+       path: ws://api.midtrans.com/howdy
+       headers:
+         Host: sg1-trojan.bonds.id
+     udp: true
     
   - name: 🔴 Linode 1
     server: 104.17.2.81
