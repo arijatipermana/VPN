@@ -1,6 +1,6 @@
 proxies:
   ### XL Axiata ###
-  - name: 🟦 HE-1
+  - name: HE-1
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
@@ -10,7 +10,7 @@ proxies:
     udp: true
   
   # Weekly
-  - name: 🟦 ID Biznet - 09.09
+  - name: ID Biznet - 09.09
     server: id-lb.vhax.net
     port: 443
     type: vmess
@@ -27,7 +27,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: 🟦 SG OVH - 09.09
+  - name: SG OVH - 09.09
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -44,7 +44,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: 🟦 SG AMP - 09.09
+  - name: SG AMP - 09.09
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
@@ -61,7 +61,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: 🟦 SG Linode
+  - name: SG Linode
     server: v2ray1.udpgw.com
     port: 443
     type: vmess
