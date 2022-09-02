@@ -1,6 +1,6 @@
 proxies:
   ### XL Axiata ###
-  - name: HE-1
+  - name: SG HE-1
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
