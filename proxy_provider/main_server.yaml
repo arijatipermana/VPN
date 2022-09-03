@@ -65,7 +65,7 @@ proxies:
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    uuid: 656793c4-32ee-4caf-a393-6a9cc29d0d85
     alterId: 0
     cipher: auto
     tls: true
@@ -73,7 +73,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/afesasa/6311e406ece7a/
+      path: /fastssh/sadeass/6312dace4fdc1/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -90,7 +90,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-xbxjhdha
+      path: /u/opentunnel.net-xbxjhdha/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
