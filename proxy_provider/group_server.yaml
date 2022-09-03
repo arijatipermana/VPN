@@ -7,6 +7,7 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+    
   - name: OVH
     server: sgovh-trojan.bonds.id
     port: 443
@@ -15,6 +16,7 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+    
   - name: UDPGW
     server: sg8-trojan.bonds.id
     port: 443
