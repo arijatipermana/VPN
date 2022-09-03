@@ -46,7 +46,7 @@ proxy-providers:
       interval: 300
   "2. Group Server":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_sg.yaml"
     interval: 3600
     path: ./proxy_provider/group_server.yaml
     health-check:
