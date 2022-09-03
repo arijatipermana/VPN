@@ -48,7 +48,7 @@ proxy-providers:
       interval: 300
   "3. ID Server":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_id.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
     interval: 3600
     path: ./proxy_provider/lb_id.yaml
     health-check:
