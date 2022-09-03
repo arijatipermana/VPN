@@ -1,1 +1,69 @@
-
+proxies:
+# Config XL
+proxy-groups:
+  - name: Servers
+    type: select
+    proxies:
+      - Main Server
+      - Load Balance
+      - Best Ping
+      - Fallback
+  - name: Main Server
+    type: select
+    url: http://hi.bonds.id/ping
+    interval: 300
+    use:
+      - "1. Main Server"
+  - name: Load Balance
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 300
+    use:
+      - "2. Load Balance"
+  - name: Best Ping
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 200
+    use:
+      - "3. Best Ping"
+  - name: Fallback
+    type: fallback
+    url: http://hi.bonds.id/ping
+    interval: 300
+    use:
+      - "4. Fallback"
+proxy-providers:
+  "1. Main Server":
+    type: file
+    path: /data/adb/clash/switch/XL/select.yaml
+    health-check:
+      enable: true
+      url: http://hi.bonds.id/ping
+      interval: 300
+  "2. Load Balance":
+    type: file
+    path: /data/adb/clash/switch/XL/group.yaml
+    health-check:
+      enable: true
+      url: http://hi.bonds.id/ping
+      interval: 300
+  "3. Best Ping":
+    type: file
+    path: /data/adb/clash/switch/XL/group.yaml
+    health-check:
+      enable: true
+      url: http://hi.bonds.id/ping
+      interval: 300
+  "4. Fallback":
+    type: file
+    path: /data/adb/clash/switch/XL/group.yaml
+    health-check:
+      enable: true
+      url: http://hi.bonds.id/ping
+      interval: 300
+rules:
+  - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
+  - IP-CIDR6,::1/128,REJECT,no-resolve
+  - MATCH,Servers
