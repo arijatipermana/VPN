@@ -1,1 +1,28 @@
+proxies:
+  - name: HE-1
+    server: sg1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 511fb4a0-2b62-11ed-8e40-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+        
+  - name: OVH
+    server: sgovh-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 38f260c0-2b62-11ed-8213-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+    
+  - name: UDPGW
+    server: sg8-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 56cb40c0-2b62-11ed-8e71-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
 
