@@ -7,6 +7,7 @@ proxy-groups:
       - Main Server
       - Load Balance
       - Best Ping
+      - Fallback
   - name: Main Server
     type: select
     url: http://www.gstatic.com/generate_204
@@ -19,13 +20,20 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
-      - "2. SG Server"
+      - "2. Group Server"
   - name: Best Ping
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 200
     use:
-      - "3. ID Server"
+      - "2. Group Server"
+  - name: Fallback
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "2. Group Server"
 proxy-providers:
   "1. Main Server":
     type: http
@@ -36,20 +44,11 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  "2. SG Server":
+  "2. Group Server":
     type: http
     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
     interval: 3600
-    path: ./proxy_provider/lb_sg.yaml
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  "3. ID Server":
-    type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
-    interval: 3600
-    path: ./proxy_provider/lb_id.yaml
+    path: ./proxy_provider/group_server.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
