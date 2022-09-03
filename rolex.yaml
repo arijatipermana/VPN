@@ -25,7 +25,7 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 200
+    tolerance: 150
     use:
       - "2. Group Server"
   - name: Fallback
