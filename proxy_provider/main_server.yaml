@@ -1,5 +1,4 @@
 proxies:
-  ### XL Axiata ###
   - name: SG HE-1
     server: sg1-trojan.bonds.id
     port: 443
@@ -9,21 +8,13 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
   
-  - name: SG Linode
-    server: v2ray1.udpgw.com
+  - name: ID Herza
+    server: idtj-herza.bonds.id
     port: 443
-    type: vmess
-    uuid: 9dd120f2-d06e-41d0-a5a1-73fbe26640ea
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: cd9af830-2b44-11ed-9fe5-1239d0255272
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: gz0.googleusercontent.com
+    sni: gz0.googleusercontent.com
     udp: true
   
   # Weekly
@@ -83,14 +74,14 @@ proxies:
     port: 443
     type: vmess
     uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-    alterId: 0
+    alterId: 16
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-xbxjhdha/
+      path: /u/opentunnel.net-jdhens
       headers:
         Host: gz0.googleusercontent.com
     udp: true
