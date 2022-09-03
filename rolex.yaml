@@ -5,24 +5,23 @@ proxy-groups:
     type: select
     proxies:
       - Main Server
-      - SG Server
-      - ID Server
+      - Load Balance
+      - Best Ping
   - name: Main Server
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "1. Main Server"
-  - name: SG Server
+  - name: Load Balance
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "2. SG Server"
-  - name: ID Server
-    type: fallback
-#   strategy: consistent-hashing
+  - name: Best Ping
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
@@ -39,7 +38,7 @@ proxy-providers:
       interval: 300
   "2. SG Server":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_sg.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
     interval: 3600
     path: ./proxy_provider/lb_sg.yaml
     health-check:
