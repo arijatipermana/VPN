@@ -21,7 +21,7 @@ proxy-groups:
     use:
       - "2. SG Server"
   - name: ID Server
-    type: fallback
+    type: url-test
 #   strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
