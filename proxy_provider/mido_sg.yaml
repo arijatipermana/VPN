@@ -16,3 +16,7 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+    
+trojan://511fb4a0-2b62-11ed-8e40-1239d0255272@sg1-trojan.bonds.id:443?sni=bug#SG-HE 1 Trojan VPN
+trojan://38f260c0-2b62-11ed-8213-1239d0255272@sgovh-trojan.bonds.id:443?sni=bug#SG Trojan OVH
+trojan://56cb40c0-2b62-11ed-8e71-1239d0255272@sg8-trojan.bonds.id:443?sni=bug#SG UDPGW Trojan VPN
