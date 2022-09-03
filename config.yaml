@@ -20,20 +20,20 @@ proxy-groups:
     url: http://hi.bonds.id/ping
     interval: 300
     use:
-      - "2. Load Balance"
+      - "2. Group Server"
   - name: Best Ping
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
     tolerance: 200
     use:
-      - "3. Best Ping"
+      - "2. Group Server"
   - name: Fallback
     type: fallback
     url: http://hi.bonds.id/ping
     interval: 300
     use:
-      - "4. Fallback"
+      - "2. Group Server"
 proxy-providers:
   "1. Main Server":
     type: http
@@ -44,25 +44,7 @@ proxy-providers:
       enable: true
       url: http://hi.bonds.id/ping
       interval: 300
-  "2. Load Balance":
-    type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
-    interval: 3600
-    path: ./proxy_provider/group_server.yaml
-    health-check:
-      enable: true
-      url: http://hi.bonds.id/ping
-      interval: 300
-  "3. Best Ping":
-    type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
-    interval: 3600
-    path: ./proxy_provider/group_server.yaml
-    health-check:
-      enable: true
-      url: http://hi.bonds.id/ping
-      interval: 300
-  "4. Fallback":
+  "2. Group Server":
     type: http
     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
     interval: 3600
