@@ -1,5 +1,5 @@
 proxies:
-# Config XL
+# XL Akrab
 proxy-groups:
   - name: Servers
     type: select
@@ -10,27 +10,27 @@ proxy-groups:
       - Fallback
   - name: Main Server
     type: select
-    url: http://hi.bonds.id/ping
+    url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "1. Main Server"
   - name: Load Balance
     type: load-balance
     strategy: consistent-hashing
-    url: http://hi.bonds.id/ping
+    url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "2. Group Server"
   - name: Best Ping
     type: url-test
-    url: http://hi.bonds.id/ping
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 200
     use:
       - "2. Group Server"
   - name: Fallback
     type: fallback
-    url: http://hi.bonds.id/ping
+    url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "2. Group Server"
@@ -42,16 +42,16 @@ proxy-providers:
     path: ./proxy_provider/main_server.yaml
     health-check:
       enable: true
-      url: http://hi.bonds.id/ping
+      url: http://www.gstatic.com/generate_204
       interval: 300
   "2. Group Server":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/rolex_sg.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
     interval: 3600
     path: ./proxy_provider/group_server.yaml
     health-check:
       enable: true
-      url: http://hi.bonds.id/ping
+      url: http://www.gstatic.com/generate_204
       interval: 300
 rules:
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
