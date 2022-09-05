@@ -53,7 +53,15 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
+rule-providers:
+  Blacklist:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/rule_provider/blacklist.yaml"
+    path: ./rule_provider/blacklist.yaml
+    interval: 86400
 rules:
+  - RULE-SET,Blacklist,REJECT
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
