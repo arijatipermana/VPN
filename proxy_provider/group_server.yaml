@@ -1,4 +1,13 @@
 proxies:
+  - name: Linode
+    server: trojan2.udpgw.com
+    port: 443
+    type: trojan
+    password: 70344540-2dce-11ed-926a-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+
   - name: HE-1
     server: sg1-trojan.bonds.id
     port: 443
@@ -13,15 +22,6 @@ proxies:
     port: 443
     type: trojan
     password: 466525d0-2b68-11ed-83a1-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
-    
-  - name: UDPGW
-    server: sg8-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 3eea21e0-2b68-11ed-a5f5-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
