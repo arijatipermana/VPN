@@ -8,7 +8,23 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
   
-  # Weekly
+  - name: SG Linode
+    server: v2ray2.udpgw.com
+    port: 443
+    type: vmess
+    uuid: f88e6036-29fc-4058-8ba0-0f5b602a2609
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
   - name: ID Biznet - 09.09
     server: id-lb.vhax.net
     port: 443
@@ -60,7 +76,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG Linode O - 09.09
+  - name: SG Linode - 09.09
     server: sgv-1.openv2ray.com
     port: 443
     type: vmess
@@ -73,23 +89,6 @@ proxies:
     network: ws
     ws-opts:
       path: /u/opentunnel.net-jdhens
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-    
-  - name: SG Linode H - 15.09
-    server: v2ray2.udpgw.com
-    port: 443
-    type: vmess
-    uuid: f88e6036-29fc-4058-8ba0-0f5b602a2609
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /howdy
       headers:
         Host: gz0.googleusercontent.com
     udp: true
