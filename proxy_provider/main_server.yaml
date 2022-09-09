@@ -76,7 +76,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG Linode - 09.09
+  - name: SG Linode - 15.09
     server: sgv-1.openv2ray.com
     port: 443
     type: vmess
@@ -88,7 +88,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-jdhens
+      path: /u/opentunnel.net-jsbsba
       headers:
         Host: gz0.googleusercontent.com
     udp: true
