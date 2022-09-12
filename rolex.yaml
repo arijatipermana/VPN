@@ -61,7 +61,7 @@ rule-providers:
     path: ./rule_provider/blacklist.yaml
     interval: 86400
 rules:
-  - RULE-SET,Blocklist,REJECT,no-resolve
+  - RULE-SET,Blacklist,REJECT,no-resolve
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
