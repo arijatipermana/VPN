@@ -127,7 +127,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG OVH - 13.10
+  - name: SG Contabo - 13.10
     server: sg4-v2ray.sshkit.org
     port: 443
     type: vmess
