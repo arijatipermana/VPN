@@ -25,11 +25,11 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG AMP - 15.09
+  - name: SG AMP - 23.09
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
+    uuid: b80925d6-40fa-4161-9e32-3550965527fd
     alterId: 0
     cipher: auto
     tls: true
@@ -37,12 +37,12 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/sgamp/63195edb8bbac/
+      path: /fastssh/kjashd/6323a7d81cf2f/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG OVH - 15.09
+  - name: SG OVH - 23.09
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -54,12 +54,12 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/ovhsde/63195eb3d2bf3/
+      path: /sshkit/sadesas/6323a7f9c3672/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  
-  - name: ID Biznet - 15.09
+    
+  - name: ID Biznet - 23.09
     server: id-lb.vhax.net
     port: 443
     type: vmess
@@ -71,44 +71,44 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/jsakld/63195e95784bc/
+      path: /sshkit/uiusah/6323a81bd841b/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: SG Linode - 15.09
-    server: sgv-1.openv2ray.com
-    port: 443
-    type: vmess
-    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-    alterId: 16
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /u/opentunnel.net-jsbsba
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
+#   - name: SG Linode - 15.09
+#     server: sgv-1.openv2ray.com
+#     port: 443
+#     type: vmess
+#     uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+#     alterId: 16
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: gz0.googleusercontent.com
+#     network: ws
+#     ws-opts:
+#       path: /u/opentunnel.net-jsbsba
+#       headers:
+#         Host: gz0.googleusercontent.com
+#     udp: true
   
-  - name: SG HE-1 - 13.10
-    server: sg1-v2ray.sshkit.org
-    port: 443
-    type: vmess
-    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/1646063060/63200e916a1df/
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
+#   - name: SG HE-1 - 13.10
+#     server: sg1-v2ray.sshkit.org
+#     port: 443
+#     type: vmess
+#     uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+#     alterId: 0
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: gz0.googleusercontent.com
+#     network: ws
+#     ws-opts:
+#       path: /sshkit/1646063060/63200e916a1df/
+#       headers:
+#         Host: gz0.googleusercontent.com
+#     udp: true
   
   - name: SG HE-3 - 13.10
     server: sg3-v2ray.sshkit.org
