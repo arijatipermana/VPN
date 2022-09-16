@@ -16,7 +16,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: HE-3
+  - name: HE-3 # Exp 13.10
     server: sg3-v2ray.sshkit.org
     port: 443
     type: vmess
