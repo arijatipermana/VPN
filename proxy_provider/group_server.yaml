@@ -16,22 +16,15 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: HE-3 # Exp 13.10
-    server: sg3-v2ray.sshkit.org
+  - name: HE-1
+    server: sg1-trojan.bonds.id
     port: 443
-    type: vmess
-    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 76fdf830-3686-11ed-8f01-1239d0255272
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/1646063060/63200d826f4f5/
-      headers:
-        Host: gz0.googleusercontent.com
+    sni: gz0.googleusercontent.com
     udp: true
+
     
   - name: OVH
     server: sgovh-trojan.bonds.id
