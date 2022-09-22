@@ -7,23 +7,6 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  
-  - name: SG Linode
-    server: v2ray2.udpgw.com
-    port: 443
-    type: vmess
-    uuid: f88e6036-29fc-4058-8ba0-0f5b602a2609
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
     
   - name: SG AMP - 23.09
     server: sg-atha.v2-ray.com
@@ -123,23 +106,6 @@ proxies:
     network: ws
     ws-opts:
       path: /sshkit/1646063060/63200d826f4f5/
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-    
-  - name: SG Contabo - 13.10
-    server: sg4-v2ray.sshkit.org
-    port: 443
-    type: vmess
-    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/1646063060/63200ec16d35a/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
