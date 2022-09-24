@@ -1,9 +1,9 @@
 proxies:
   - name: Linode
-    server: v2ray2.udpgw.com
+    server: v2ray3.udpgw.com
     port: 443
     type: vmess
-    uuid: 5b06f4b9-dea7-412e-a119-0d93c5e8a866
+    uuid: 478ff12a-dfb6-4f0e-9300-03125275d90e
     alterId: 0
     cipher: auto
     tls: true
