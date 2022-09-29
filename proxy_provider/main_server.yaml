@@ -7,12 +7,11 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-    
-  - name: SG AMP - 30.09
+  - name: SG AMP # 07.10
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+    uuid: b80925d6-40fa-4161-9e32-3550965527fd
     alterId: 0
     cipher: auto
     tls: true
@@ -20,12 +19,11 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /fastssh/sgamp30/632d03d0822bb/
+      path: /fastssh/lkslfq/63361cb30f146/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-    
-  - name: SG OVH - 30.09
+  - name: SG OVH # 07.10
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -37,12 +35,11 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/sgovh30/632d03f7939fc/
+      path: /sshkit/klsdfj/63361cc31db00/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-    
-  - name: ID Biznet - 30.09
+  - name: SG Biznet # 07.10
     server: id-lb.vhax.net
     port: 443
     type: vmess
@@ -54,7 +51,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/idbiz30/632d0410e8cde/
+      path: /sshkit/jklsj/63361ce4054a8/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -93,7 +90,7 @@ proxies:
 #         Host: gz0.googleusercontent.com
 #     udp: true
   
-  - name: SG HE-3 - 13.10
+  - name: SG HE-3 # 13.10
     server: sg3-v2ray.sshkit.org
     port: 443
     type: vmess
