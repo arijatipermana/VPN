@@ -1,19 +1,11 @@
 proxies:
   - name: Linode
-    server: v2ray3.udpgw.com
+    server: trojan3.udpgw.com
     port: 443
-    type: vmess
-    uuid: 478ff12a-dfb6-4f0e-9300-03125275d90e
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: b3411170-4082-11ed-9a91-1239d0255272
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: gz0.googleusercontent.com
+    sni: gz0.googleusercontent.com
     udp: true
 
   - name: HE-1
