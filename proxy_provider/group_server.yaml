@@ -7,22 +7,21 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-
+    
+  - name: AMP
+    server: sg-atha.bonds.id
+    port: 443
+    type: trojan
+    password: eeb09c10-43d3-11ed-9ee2-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+    
   - name: HE-1
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
     password: 76fdf830-3686-11ed-8f01-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
-
-    
-  - name: OVH
-    server: sgovh-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 466525d0-2b68-11ed-83a1-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
