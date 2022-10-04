@@ -7,6 +7,14 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+  - name: SG AMP DS
+    server: sg-atha.bonds.id
+    port: 443
+    type: trojan
+    password: 4cc49f80-43d5-11ed-851e-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
   - name: SG AMP # 07.10
     server: sg-atha.v2-ray.com
     port: 443
