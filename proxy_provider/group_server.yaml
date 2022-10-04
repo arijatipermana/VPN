@@ -1,5 +1,5 @@
 proxies:
-  - name: Linode
+  - name: Linode # 16.10
     server: trojan1.udpgw.com
     port: 443
     type: trojan
