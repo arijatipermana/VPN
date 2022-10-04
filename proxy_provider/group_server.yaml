@@ -12,7 +12,7 @@ proxies:
     server: sg-atha.bonds.id
     port: 443
     type: trojan
-    password: eeb09c10-43d3-11ed-9ee2-1239d0255272
+    password: fa2c7eb0-43d4-11ed-b93b-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
