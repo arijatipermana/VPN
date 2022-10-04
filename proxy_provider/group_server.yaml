@@ -1,9 +1,9 @@
 proxies:
   - name: Linode
-    server: trojan3.udpgw.com
+    server: trojan1.udpgw.com
     port: 443
     type: trojan
-    password: b3411170-4082-11ed-9a91-1239d0255272
+    password: 5fecd2f0-43bd-11ed-908e-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
