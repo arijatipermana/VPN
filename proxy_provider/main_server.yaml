@@ -47,21 +47,21 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: ID Biznet 
-    server: id-lb.vhax.net
-    port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/iuwhb/634103914abbb/
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
+#   - name: ID Biznet 
+#     server: id-lb.vhax.net
+#     port: 443
+#     type: vmess
+#     uuid: 6fea1649-425b-4092-bf53-29792152c925
+#     alterId: 0
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: gz0.googleusercontent.com
+#     network: ws
+#     ws-opts:
+#       path: /sshkit/iuwhb/634103914abbb/
+#       headers:
+#         Host: gz0.googleusercontent.com
+#     udp: true
     
     #ikd b2705d90-47f4-11ed-aabc-1239d0255272
