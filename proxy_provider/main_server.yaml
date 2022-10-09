@@ -1,5 +1,5 @@
 proxies:
-  - name: SG AMP DS
+  - name: SG Dual Stack
     server: sg-atha.bonds.id
     port: 443
     type: trojan
