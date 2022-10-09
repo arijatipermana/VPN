@@ -1,17 +1,17 @@
 proxies:
-  - name: Linode # 16.10
-    server: trojan1.udpgw.com
-    port: 443
-    type: trojan
-    password: 5fecd2f0-43bd-11ed-908e-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
   - name: AMP
     server: sg-atha.bonds.id
     port: 443
     type: trojan
     password: fa2c7eb0-43d4-11ed-b93b-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+  - name: Linode # 16.10
+    server: trojan1.udpgw.com
+    port: 443
+    type: trojan
+    password: 5fecd2f0-43bd-11ed-908e-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
