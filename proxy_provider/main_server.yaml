@@ -7,14 +7,6 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: ID IKD
-    server: idtj-bogor.bonds.id
-    port: 443
-    type: trojan
-    password: ef6e87f0-47f3-11ed-8938-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
   - name: SG AMP
     server: sg-atha.v2-ray.com
     port: 443
