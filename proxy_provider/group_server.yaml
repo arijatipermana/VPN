@@ -7,7 +7,7 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: Linode # 16.10
+  - name: Linode # 24.10
     server: trojan2.udpgw.com
     port: 443
     type: trojan
