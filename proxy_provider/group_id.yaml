@@ -5,7 +5,7 @@ proxies:
     type: trojan
     password: a4c46420-4b18-11ed-8a52-1239d0255272
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    sni: teams.microsoft.com
     udp: true
   - name: IKD 2
     server: idtj-bogor.bonds.id
