@@ -1,5 +1,5 @@
 proxies:
-  - name: IKD
+  - name: IKD 1
     server: idtj-bogor.bonds.id
     port: 443
     type: trojan
@@ -7,21 +7,19 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: Biznet 
-    server: id-lb.vhax.net
+  - name: IKD 2
+    server: idtj-bogor.bonds.id
     port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 96ef36e0-4b18-11ed-b2a2-1239d0255272
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/id17/63435b919313e/
-      headers:
-        Host: gz0.googleusercontent.com
+    sni: gz0.googleusercontent.com
     udp: true
-    
-    #ikd 
+  - name: IKD 3
+    server: idtj-bogor.bonds.id
+    port: 443
+    type: trojan
+    password: 87168280-4b18-11ed-989a-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
