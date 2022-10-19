@@ -7,6 +7,19 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+  - name: ID IKD
+    server: cdn.onlymega.com
+    port: 443
+    type: trojan
+    password: 87168280-4b18-11ed-989a-1239d0255272
+    skip-cert-verify: true
+    sni: idtj-bogor.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: idtj-bogor.bonds.id
+    udp: true
   - name: SG AMP
     server: sg-atha.v2-ray.com
     port: 443
