@@ -21,23 +21,23 @@ proxies:
         Host: idtj-bogor.bonds.id
     udp: true
   - name: SG AMP
-    server: sg-atha.v2-ray.com
+    server: cdn.onlymega.com
     port: 443
     type: vmess
-    uuid: aa72613d-188c-4d7b-be46-6011d75a5f7a
+    uuid: c8e45d3f-3474-454e-8b91-cae482cc2a9a
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
+    servername: sg-atha.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/hdhdv/6341037a92339/
+      path: /fastssh/26oct/634f6d0b20f82/
       headers:
-        Host: gz0.googleusercontent.com
+        Host: sg-atha.v2-ray.com
     udp: true
   - name: SG OVH
-    server: sg-lb.vhax.net
+    server: cdn.onlymega.com
     port: 443
     type: vmess
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -45,12 +45,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
+    servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/ushh/6341038993984/
+      path: /sshkit/26oct/634f6d0b968da/
       headers:
-        Host: gz0.googleusercontent.com
+        Host: sg-lb.vhax.net
     udp: true
 #   - name: ID Biznet 
 #     server: id-lb.vhax.net
