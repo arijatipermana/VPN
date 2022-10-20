@@ -5,7 +5,7 @@ proxies:
     type: trojan
     password: a26b3420-476e-11ed-a7dd-1239d0255272
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    sni: teams.microsoft.com
     udp: true
   - name: Linode # 24.10
     server: trojan2.udpgw.com
@@ -13,7 +13,7 @@ proxies:
     type: trojan
     password: 797d57a0-4c9e-11ed-86bf-1239d0255272
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    sni: teams.microsoft.com
     udp: true
   - name: HE-1
     server: sg1-trojan.bonds.id
@@ -21,5 +21,5 @@ proxies:
     type: trojan
     password: 76fdf830-3686-11ed-8f01-1239d0255272
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    sni: teams.microsoft.com
     udp: true
