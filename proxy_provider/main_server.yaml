@@ -5,7 +5,7 @@ proxies:
     type: trojan
     password: 4cc49f80-43d5-11ed-851e-1239d0255272
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    sni: teams.microsoft.com
     udp: true
   - name: ID IKD
     server: cdn.onlymega.com
