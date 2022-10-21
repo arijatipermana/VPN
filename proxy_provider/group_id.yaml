@@ -1,21 +1,5 @@
 proxies:
   - name: IKD 1
-    server: idtj-bogor.bonds.id
-    port: 443
-    type: trojan
-    password: a4c46420-4b18-11ed-8a52-1239d0255272
-    skip-cert-verify: true
-    sni: teams.microsoft.com
-    udp: true
-  - name: IKD 2
-    server: idtj-bogor.bonds.id
-    port: 443
-    type: trojan
-    password: 96ef36e0-4b18-11ed-b2a2-1239d0255272
-    skip-cert-verify: true
-    sni: teams.microsoft.com
-    udp: true
-  - name: IKD 3
     server: cdn.onlymega.com
     port: 443
     type: trojan
@@ -27,4 +11,20 @@ proxies:
       path: /howdy
       headers: 
         Host: idtj-bogor.bonds.id
+    udp: true
+  - name: IKD 2
+    server: idtj-bogor.bonds.id
+    port: 443
+    type: trojan
+    password: f30c5010-4b18-11ed-857c-1239d0255272
+    skip-cert-verify: true
+    sni: teams.microsoft.com
+    udp: true
+  - name: IKD 3
+    server: idtj-bogor.bonds.id
+    port: 443
+    type: trojan
+    password: 96ef36e0-4b18-11ed-b2a2-1239d0255272
+    skip-cert-verify: true
+    sni: teams.microsoft.com
     udp: true
