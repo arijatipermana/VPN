@@ -1,11 +1,16 @@
 proxies:
-  - name: AMP
-    server: sg-atha.bonds.id
+  - name: OVH
+    server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: a26b3420-476e-11ed-a7dd-1239d0255272
+    password: d17ead30-513c-11ed-b313-1239d0255272
     skip-cert-verify: true
-    sni: teams.microsoft.com
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sgovh-trojan.bonds.id
     udp: true
   - name: Linode # 24.10
     server: trojan2.udpgw.com
