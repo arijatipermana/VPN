@@ -1,11 +1,16 @@
 proxies:
   - name: SG Dual Stack
-    server: sg-atha.bonds.id
+    server: cdn.onlymega.com
     port: 443
     type: trojan
     password: 4cc49f80-43d5-11ed-851e-1239d0255272
     skip-cert-verify: true
-    sni: teams.microsoft.com
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg-atha.bonds.id
     udp: true
   - name: ID IKD
     server: cdn.onlymega.com
