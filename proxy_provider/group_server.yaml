@@ -13,10 +13,10 @@ proxies:
         Host: sgovh-trojan.bonds.id
     udp: true
   - name: Linode # 24.10
-    server: trojan2.udpgw.com
+    server: trojan3.udpgw.com
     port: 443
     type: trojan
-    password: 797d57a0-4c9e-11ed-86bf-1239d0255272
+    password: caff5f10-5222-11ed-97cf-1239d0255272
     skip-cert-verify: true
     sni: teams.microsoft.com
     udp: true
