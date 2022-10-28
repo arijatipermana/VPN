@@ -1,5 +1,4 @@
 proxies:
-  
   - name: Linode # 24.10
     server: trojan3.udpgw.com
     port: 443
