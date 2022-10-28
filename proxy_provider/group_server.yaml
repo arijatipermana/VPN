@@ -1,19 +1,29 @@
 proxies:
-  - name: Linode # 24.10
-    server: trojan3.udpgw.com
-    port: 443
-    type: trojan
-    password: caff5f10-5222-11ed-97cf-1239d0255272
-    skip-cert-verify: true
-    sni: teams.microsoft.com
-    udp: true
   - name: HE-1
-    server: sg1-trojan.bonds.id
+    server: cdn.onlymega.com
     port: 443
     type: trojan
     password: 6ae6f4a0-513d-11ed-81c6-1239d0255272
     skip-cert-verify: true
-    sni: teams.microsoft.com
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg1-trojan.bonds.id
+    udp: true
+  - name: Linode
+    server: cdn.onlymega.com
+    port: 443
+    type: trojan
+    password: caff5f10-5222-11ed-97cf-1239d0255272
+    skip-cert-verify: true
+    sni: trojan3.udpgw.com
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: trojan3.udpgw.com
     udp: true
   - name: OVH
     server: cdn.onlymega.com
