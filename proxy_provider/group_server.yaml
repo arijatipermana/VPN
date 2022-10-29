@@ -16,14 +16,14 @@ proxies:
     server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: caff5f10-5222-11ed-97cf-1239d0255272
+    password: 6fc6b140-57df-11ed-ac82-1239d0255272
     skip-cert-verify: true
-    sni: trojan3.udpgw.com
+    sni: trojan1.udpgw.com
     network: ws
     ws-opts: 
       path: /howdy
       headers: 
-        Host: trojan3.udpgw.com
+        Host: trojan1.udpgw.com
     udp: true
   - name: OVH
     server: cdn.onlymega.com
