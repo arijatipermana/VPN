@@ -3,7 +3,7 @@ proxies:
     server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: 87168280-4b18-11ed-989a-1239d0255272
+    password: db9c3cc0-554f-11ed-854c-1239d0255272
     skip-cert-verify: true
     sni: idtj-bogor.bonds.id
     network: ws
