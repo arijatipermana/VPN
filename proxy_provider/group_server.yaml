@@ -16,7 +16,7 @@ proxies:
     server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: 6fc6b140-57df-11ed-ac82-1239d0255272
+    password: b3490440-57ee-11ed-8b6c-1239d0255272
     skip-cert-verify: true
     sni: trojan1.udpgw.com
     network: ws
