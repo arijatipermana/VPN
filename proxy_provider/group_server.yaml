@@ -3,7 +3,7 @@ proxies:
     server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: 6ae6f4a0-513d-11ed-81c6-1239d0255272
+    password: 3ad285a0-5a98-11ed-9cc6-1239d0255272
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
     network: ws
