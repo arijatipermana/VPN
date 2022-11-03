@@ -5,7 +5,8 @@ proxy-groups:
     type: select
     proxies:
       - Main Server
-      - Load Balance
+      - SG Load Balance
+      - ID Load Balance
       - SG Fallback
       - ID Fallback
   - name: Main Server
@@ -14,7 +15,14 @@ proxy-groups:
     interval: 300
     use:
       - "1. Main Server"
-  - name: Load Balance
+  - name: SG Load Balance
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "2. Group SG"
+  - name: ID Load Balance
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
@@ -45,9 +53,9 @@ proxy-providers:
       interval: 300
   "2. Group SG":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_server.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/group_sg.yaml"
     interval: 3600
-    path: ./proxy_provider/group_server.yaml
+    path: ./proxy_provider/group_sg.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
