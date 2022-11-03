@@ -20,7 +20,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
-      - "2. Group SG"
+      - "3. Group ID"
   - name: SG Fallback
     type: fallback
     url: http://www.gstatic.com/generate_204
