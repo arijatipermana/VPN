@@ -16,14 +16,14 @@ proxies:
     server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: 4a6873e0-5dad-11ed-a300-1239d0255272
+    password: 3c3b51f0-64d1-11ed-8f52-1239d0255272
     skip-cert-verify: true
-    sni: trojan2.udpgw.com
+    sni: trojan3.udpgw.com
     network: ws
     ws-opts: 
       path: /howdy
       headers: 
-        Host: trojan2.udpgw.com
+        Host: trojan3.udpgw.com
     udp: true
   - name: SG AMP
     server: cdn.onlymega.com
