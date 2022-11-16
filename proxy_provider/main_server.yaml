@@ -1,18 +1,5 @@
 proxies:
-  - name: SG Dual Stack
-    server: cdn.onlymega.com
-    port: 443
-    type: trojan
-    password: 4545d330-5dad-11ed-92ad-1239d0255272
-    skip-cert-verify: true
-    sni: sg-atha.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg-atha.bonds.id
-    udp: true
-  - name: Linode
+  - name: SG Weekly Servers
     server: cdn.onlymega.com
     port: 443
     type: trojan
@@ -28,32 +15,45 @@ proxies:
   - name: SG AMP
     server: cdn.onlymega.com
     port: 443
-    type: vmess
-    uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 4545d330-5dad-11ed-92ad-1239d0255272
     skip-cert-verify: true
-    servername: sg-atha.v2-ray.com
+    sni: sg-atha.bonds.id
     network: ws
-    ws-opts:
-      path: /fastssh/sep06/635dccf0294f3/
-      headers:
-        Host: sg-atha.v2-ray.com
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg-atha.bonds.id
     udp: true
-  - name: SG OVH
-    server: cdn.onlymega.com
-    port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-lb.vhax.net
-    network: ws
-    ws-opts:
-      path: /sshkit/sep06/635dccffa456c/
-      headers:
-        Host: sg-lb.vhax.net
-    udp: true
+#   - name: SG AMP
+#     server: cdn.onlymega.com
+#     port: 443
+#     type: vmess
+#     uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
+#     alterId: 0
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: sg-atha.v2-ray.com
+#     network: ws
+#     ws-opts:
+#       path: /fastssh/sep06/635dccf0294f3/
+#       headers:
+#         Host: sg-atha.v2-ray.com
+#     udp: true
+#   - name: SG OVH
+#     server: cdn.onlymega.com
+#     port: 443
+#     type: vmess
+#     uuid: 6fea1649-425b-4092-bf53-29792152c925
+#     alterId: 0
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: sg-lb.vhax.net
+#     network: ws
+#     ws-opts:
+#       path: /sshkit/sep06/635dccffa456c/
+#       headers:
+#         Host: sg-lb.vhax.net
+#     udp: true
