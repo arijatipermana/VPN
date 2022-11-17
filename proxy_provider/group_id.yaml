@@ -24,7 +24,7 @@ proxies:
     server: idtj-bogor.bonds.id
     port: 443
     type: trojan
-    password: 90db9e60-5d2b-11ed-9195-1239d0255272
+    password: 4f65d2c0-5d2b-11ed-97c9-1239d0255272
     skip-cert-verify: true
     sni: teams.microsoft.com
     udp: true
