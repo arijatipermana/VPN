@@ -21,10 +21,10 @@ proxies:
     sni: teams.microsoft.com
     udp: true
   - name: IKD 3
-    server: idtj-bogor.bonds.id
+    server: idtj-ikd.bonds.id
     port: 443
     type: trojan
-    password: 4f65d2c0-5d2b-11ed-97c9-1239d0255272
+    password: 7b9f25b0-679b-11ed-b87b-1239d0255272
     skip-cert-verify: true
     sni: teams.microsoft.com
     udp: true
