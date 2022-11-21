@@ -1,35 +1,17 @@
 proxies:
-  - name: HE 1
-    server: cdn.onlymega.com
+  - name: HE SSL
+    server: sg1-trojan.bonds.id
     port: 443
     type: trojan
-    password: 715193a0-67f3-11ed-aa64-1239d0255272
+    password: 1517cd20-69bc-11ed-91c1-1239d0255272
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg1-trojan.bonds.id
+    sni: layanan.ruangguru.com
     udp: true
   - name: HE 2
     server: cdn.onlymega.com
     port: 443
     type: trojan
-    password: 4d83fd40-67f3-11ed-bac4-1239d0255272
-    skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg1-trojan.bonds.id
-    udp: true
-  - name: HE 3
-    server: cdn.onlymega.com
-    port: 443
-    type: trojan
-    password: 812d1b50-67f3-11ed-b111-1239d0255272
+    password: 321ad100-69bc-11ed-b38e-1239d0255272
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
     network: ws
