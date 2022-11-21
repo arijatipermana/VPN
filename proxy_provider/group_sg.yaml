@@ -18,5 +18,5 @@ proxies:
     type: trojan
     password: 1517cd20-69bc-11ed-91c1-1239d0255272
     skip-cert-verify: true
-    sni: layanan.ruangguru.com
+    sni: teams.microsoft.com
     udp: true
