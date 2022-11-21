@@ -7,7 +7,7 @@ proxies:
     skip-cert-verify: true
     sni: layanan.ruangguru.com
     udp: true
-  - name: HE 2
+  - name: HE WS
     server: cdn.onlymega.com
     port: 443
     type: trojan
