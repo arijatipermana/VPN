@@ -12,7 +12,7 @@ proxies:
       headers: 
         Host: trojan3.udpgw.com
     udp: true
-  - name: SG AMP
+  - name: SG DualStack
     server: cdn.onlymega.com
     port: 443
     type: trojan
@@ -39,29 +39,29 @@ proxies:
         Host: idtj-herza.bonds.id
     udp: true
   - name: ID Herza SSL
-    server: idtj-ikd.bonds.id
+    server: idtj-herza.bonds.id
     port: 443
     type: trojan
     password: 1b23b880-694e-11ed-8057-1239d0255272
     skip-cert-verify: true
     sni: layanan.ruangguru.com
     udp: true
-#   - name: SG AMP
-#     server: cdn.onlymega.com
-#     port: 443
-#     type: vmess
-#     uuid: 698f55cc-d74a-4c90-bf69-973b3b67674e
-#     alterId: 0
-#     cipher: auto
-#     tls: true
-#     skip-cert-verify: true
-#     servername: sg-atha.v2-ray.com
-#     network: ws
-#     ws-opts:
-#       path: /fastssh/sep06/635dccf0294f3/
-#       headers:
-#         Host: sg-atha.v2-ray.com
-#     udp: true
+  - name: SG AMP SSL
+    server: sg-atha.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: layanan.ruangguru.com
+    network: ws
+    ws-opts:
+      path: /fastssh/28nov/637af851eed5b/
+      headers:
+        Host: layanan.ruangguru.com
+    udp: true
 #   - name: SG OVH
 #     server: cdn.onlymega.com
 #     port: 443
