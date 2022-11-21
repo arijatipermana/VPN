@@ -1,12 +1,4 @@
 proxies:
-  - name: Herza SSL
-    server: idtj-herza.bonds.id
-    port: 443
-    type: trojan
-    password: 52451de0-69bc-11ed-a1f5-1239d0255272
-    skip-cert-verify: true
-    sni: layanan.ruangguru.com
-    udp: true
   - name: Herza WS
     server: cdn.onlymega.com
     port: 443
@@ -20,3 +12,12 @@ proxies:
       headers: 
         Host: idtj-herza.bonds.id
     udp: true
+  - name: Herza SSL
+    server: idtj-herza.bonds.id
+    port: 443
+    type: trojan
+    password: 52451de0-69bc-11ed-a1f5-1239d0255272
+    skip-cert-verify: true
+    sni: layanan.ruangguru.com
+    udp: true
+  
