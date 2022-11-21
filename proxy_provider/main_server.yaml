@@ -38,6 +38,14 @@ proxies:
       headers: 
         Host: idtj-herza.bonds.id
     udp: true
+  - name: ID Herza SSL
+    server: idtj-ikd.bonds.id
+    port: 443
+    type: trojan
+    password: 1b23b880-694e-11ed-8057-1239d0255272
+    skip-cert-verify: true
+    sni: layanan.ruangguru.com
+    udp: true
 #   - name: SG AMP
 #     server: cdn.onlymega.com
 #     port: 443
