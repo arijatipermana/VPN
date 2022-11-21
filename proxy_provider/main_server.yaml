@@ -34,12 +34,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: layanan.ruangguru.com
+    servername: teams.microsoft.com
     network: ws
     ws-opts:
       path: /fastssh/28nov/637af851eed5b/
       headers:
-        Host: layanan.ruangguru.com
+        Host: teams.microsoft.com
     udp: true
 #   - name: SG OVH
 #     server: cdn.onlymega.com
