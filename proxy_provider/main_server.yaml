@@ -1,16 +1,11 @@
 proxies:
-  - name: SG Weekly
-    server: cdn.onlymega.com
+  - name: SG Weekly SSL
+    server: trojan3.udpgw.com
     port: 443
     type: trojan
     password: 3c3b51f0-64d1-11ed-8f52-1239d0255272
     skip-cert-verify: true
-    sni: trojan3.udpgw.com
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: trojan3.udpgw.com
+    sni: layanan.ruangguru.com
     udp: true
   - name: SG DualStack
     server: cdn.onlymega.com
@@ -24,27 +19,6 @@ proxies:
       path: /howdy
       headers: 
         Host: sg-atha.bonds.id
-    udp: true
-  - name: ID Herza
-    server: cdn.onlymega.com
-    port: 443
-    type: trojan
-    password: 1b23b880-694e-11ed-8057-1239d0255272
-    skip-cert-verify: true
-    sni: idtj-herza.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: idtj-herza.bonds.id
-    udp: true
-  - name: ID Herza SSL
-    server: idtj-herza.bonds.id
-    port: 443
-    type: trojan
-    password: 1b23b880-694e-11ed-8057-1239d0255272
-    skip-cert-verify: true
-    sni: layanan.ruangguru.com
     udp: true
   - name: SG AMP SSL
     server: sg-atha.v2-ray.com
