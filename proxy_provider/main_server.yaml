@@ -7,7 +7,7 @@ proxies:
     skip-cert-verify: true
     sni: layanan.ruangguru.com
     udp: true
-  - name: SG DualStack
+  - name: SG DualStack WS
     server: cdn.onlymega.com
     port: 443
     type: trojan
