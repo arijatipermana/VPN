@@ -6,8 +6,8 @@ proxy-groups:
     proxies:
       - Universal
       - Fallback
-      - SG Load Balance
-      - ID Load Balance
+      - SG LB
+      - ID LB
   - name: Universal
     type: select
     url: http://www.gstatic.com/generate_204
