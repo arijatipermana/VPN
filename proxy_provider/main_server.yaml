@@ -25,35 +25,36 @@ proxies:
       headers: 
         Host: sg-atha.bonds.id
     udp: true
-  - name: SG AMP SSL
-    server: sg-atha.v2-ray.com
-    port: 443
-    type: vmess
-    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: teams.microsoft.com
-    network: ws
-    ws-opts:
-      path: /fastssh/28nov/637af851eed5b/
-      headers:
-        Host: teams.microsoft.com
-    udp: true
-#   - name: SG OVH
-#     server: cdn.onlymega.com
-#     port: 443
-#     type: vmess
-#     uuid: 6fea1649-425b-4092-bf53-29792152c925
-#     alterId: 0
-#     cipher: auto
-#     tls: true
-#     skip-cert-verify: true
-#     servername: sg-lb.vhax.net
-#     network: ws
-#     ws-opts:
-#       path: /sshkit/sep06/635dccffa456c/
-#       headers:
-#         Host: sg-lb.vhax.net
-#     udp: true
+#  - name: SG AMP SSL
+#    server: sg-atha.v2-ray.com
+#    port: 443
+#    type: vmess
+#    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+#    alterId: 0
+#    cipher: auto
+#    tls: true
+#    skip-cert-verify: true
+#    servername: teams.microsoft.com
+#    network: ws
+#    ws-opts:
+#      path: /fastssh/28nov/637af851eed5b/
+#      headers:
+#        Host: teams.microsoft.com
+#    udp: true
+
+   - name: SG OVH #29.11
+     server: cdn.onlymega.com
+     port: 443
+     type: vmess
+     uuid: 6fea1649-425b-4092-bf53-29792152c925
+     alterId: 0
+     cipher: auto
+     tls: true
+     skip-cert-verify: true
+     servername: sg-lb.vhax.net
+     network: ws
+     ws-opts:
+       path: /sshkit/jdhhd/637c16b97fbfa/
+       headers:
+         Host: sg-lb.vhax.net
+     udp: true
