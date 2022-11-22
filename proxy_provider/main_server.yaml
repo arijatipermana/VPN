@@ -25,7 +25,7 @@ proxies:
       headers: 
         Host: sg-atha.bonds.id
     udp: true
-#  - name: SG AMP SSL
+#  - name: SG AMP
 #    server: sg-atha.v2-ray.com
 #    port: 443
 #    type: vmess
