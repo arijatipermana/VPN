@@ -1,5 +1,5 @@
 proxies:
-  - name: SG Weekly WS
+  - name: SG Weekly
     server: cdn.onlymega.com
     port: 443
     type: trojan
@@ -12,7 +12,7 @@ proxies:
       headers: 
         Host: trojan3.udpgw.com
     udp: true
-  - name: SG DualStack WS
+  - name: SG Dual Stack
     server: cdn.onlymega.com
     port: 443
     type: trojan
