@@ -4,13 +4,18 @@ proxy-groups:
   - name: Servers
     type: select
     proxies:
-      - Main Server
+      - Universal
+      - Fallback
       - SG Load Balance
       - ID Load Balance
-      - SG Fallback
-      - ID Fallback
-  - name: Main Server
+  - name: Universal
     type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "1. Main Server"
+  - name: Fallback
+    type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
@@ -25,18 +30,6 @@ proxy-groups:
   - name: ID Load Balance
     type: load-balance
     strategy: consistent-hashing
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - "3. Group ID"
-  - name: SG Fallback
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - "2. Group SG"
-  - name: ID Fallback
-    type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
