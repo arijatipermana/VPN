@@ -1,6 +1,6 @@
 proxies:
   - name: HE WS
-    server: cdn.onlymega.com
+    server: 172.67.73.39
     port: 443
     type: trojan
     password: 321ad100-69bc-11ed-b38e-1239d0255272
