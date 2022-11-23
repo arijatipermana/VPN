@@ -1,6 +1,6 @@
 proxies:
   - name: Herza WS
-    server: cdn.onlymega.com
+    server: 172.67.73.39
     port: 443
     type: trojan
     password: 89495e40-69bc-11ed-898b-1239d0255272
