@@ -38,6 +38,14 @@ proxies:
       headers: 
         Host: sgovh-trojan.bonds.id
     udp: true
+  - name: OVH SSL
+    server: sgovh-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 5dc1d1f0-6ad8-11ed-8915-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com
+    udp: true
 #   - name: SG OVH #29.11
 #     server: cdn.onlymega.com
 #     port: 443
