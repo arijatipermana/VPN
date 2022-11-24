@@ -46,6 +46,14 @@ proxies:
     skip-cert-verify: true
     sni: layanan.ruangguru.com
     udp: true
+  - name: DO
+    server: trojan3.udpgw.com
+    port: 443
+    type: trojan
+    password: 3c3b51f0-64d1-11ed-8f52-1239d0255272
+    skip-cert-verify: true
+    sni: kh.google.com
+    udp: true
 #   - name: SG OVH #29.11
 #     server: cdn.onlymega.com
 #     port: 443
