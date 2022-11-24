@@ -46,7 +46,7 @@ proxies:
     skip-cert-verify: true
     sni: kh.google.com
     udp: true
-  - name: DO
+  - name: Weekly SSL
     server: trojan3.udpgw.com
     port: 443
     type: trojan
