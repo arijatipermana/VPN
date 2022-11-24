@@ -44,7 +44,7 @@ proxies:
     type: trojan
     password: 5dc1d1f0-6ad8-11ed-8915-1239d0255272
     skip-cert-verify: true
-    sni: layanan.ruangguru.com
+    sni: kh.google.com
     udp: true
   - name: DO
     server: trojan3.udpgw.com
