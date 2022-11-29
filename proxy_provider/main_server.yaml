@@ -1,16 +1,11 @@
 proxies:
   - name: SG Dual Stack
-    server: 172.67.73.39
+    server: sg-atha.bonds.id
     port: 443
     type: trojan
     password: 4545d330-5dad-11ed-92ad-1239d0255272
     skip-cert-verify: true
-    sni: sg-atha.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg-atha.bonds.id
+    sni: authsvc.teams.microsoft.com
     udp: true
   - name: SG Weekly
     server: 172.67.73.39
