@@ -38,21 +38,29 @@ proxies:
       headers: 
         Host: sgovh-trojan.bonds.id
     udp: true
-  - name: OVH SSL
-    server: sgovh-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 5dc1d1f0-6ad8-11ed-8915-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
-  - name: Weekly SSL
+  - name: SG Weekly SSL
     server: trojan3.udpgw.com
     port: 443
     type: trojan
     password: 3c3b51f0-64d1-11ed-8f52-1239d0255272
     skip-cert-verify: true
     sni: authsvc.teams.microsoft.com
+    udp: true
+  - name: ID AMP
+    server: idv-3.openv2ray.com
+    port: 443
+    type: vmess
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 16
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: authsvc.teams.microsoft.com
+    network: ws
+    ws-opts:
+      path: /u/opentunnel.net-7dec
+      headers:
+        Host: authsvc.teams.microsoft.com
     udp: true
 #   - name: SG OVH #29.11
 #     server: cdn.onlymega.com
