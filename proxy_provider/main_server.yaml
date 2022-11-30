@@ -32,6 +32,7 @@ proxies:
         Host: authsvc.teams.microsoft.com
     udp: true
     
+  # Telkomsel
   - name: SG Weekly Tsel
     server: 172.105.117.185
     port: 80
