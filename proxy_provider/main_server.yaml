@@ -15,19 +15,6 @@ proxies:
     skip-cert-verify: true
     sni: authsvc.teams.microsoft.com
     udp: true
-  - name: SG OVH
-    server: 172.67.73.39
-    port: 443
-    type: trojan
-    password: 5dc1d1f0-6ad8-11ed-8915-1239d0255272
-    skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sgovh-trojan.bonds.id
-    udp: true
   - name: ID AMP
     server: idv-3.openv2ray.com
     port: 443
