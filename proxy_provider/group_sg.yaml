@@ -1,35 +1,31 @@
 proxies:
   - name: HE 01
-    server: 172.67.73.39
+    server: sg1-trojan.bonds.id
     port: 443
     type: trojan
     password: 321ad100-69bc-11ed-b38e-1239d0255272
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg1-trojan.bonds.id
+    sni: authsvc.teams.microsoft.com
     udp: true
   - name: HE 02
-    server: 172.67.73.39
+    server: sg1-trojan.bonds.id
     port: 443
     type: trojan
     password: 1517cd20-69bc-11ed-91c1-1239d0255272
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg1-trojan.bonds.id
+    sni: authsvc.teams.microsoft.com
     udp: true
-#   - name: HE SSL
-#     server: sg1-trojan.bonds.id
+    
+#   - name: HE 02
+#     server: 172.67.73.39
 #     port: 443
 #     type: trojan
 #     password: 1517cd20-69bc-11ed-91c1-1239d0255272
 #     skip-cert-verify: true
-#     sni: teams.microsoft.com
+#     sni: sg1-trojan.bonds.id
+#     network: ws
+#     ws-opts: 
+#       path: /howdy
+#       headers: 
+#         Host: sg1-trojan.bonds.id
 #     udp: true
