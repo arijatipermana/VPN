@@ -1,4 +1,12 @@
 proxies:
+  - name: SG Weekly
+    server: trojan1.udpgw.com
+    port: 443
+    type: trojan
+    password: bdcea750-7060-11ed-97bc-1239d0255272
+    skip-cert-verify: true
+    sni: authsvc.teams.microsoft.com
+    udp: true
   - name: SG Dual Stack
     server: sg-atha.bonds.id
     port: 443
@@ -6,19 +14,6 @@ proxies:
     password: 4545d330-5dad-11ed-92ad-1239d0255272
     skip-cert-verify: true
     sni: authsvc.teams.microsoft.com
-    udp: true
-  - name: SG Weekly
-    server: 172.67.73.39
-    port: 443
-    type: trojan
-    password: 3c3b51f0-64d1-11ed-8f52-1239d0255272
-    skip-cert-verify: true
-    sni: trojan3.udpgw.com
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: trojan3.udpgw.com
     udp: true
   - name: SG OVH
     server: 172.67.73.39
@@ -32,14 +27,6 @@ proxies:
       path: /howdy
       headers: 
         Host: sgovh-trojan.bonds.id
-    udp: true
-  - name: SG Weekly SSL
-    server: trojan3.udpgw.com
-    port: 443
-    type: trojan
-    password: 3c3b51f0-64d1-11ed-8f52-1239d0255272
-    skip-cert-verify: true
-    sni: authsvc.teams.microsoft.com
     udp: true
   - name: ID AMP
     server: idv-3.openv2ray.com
