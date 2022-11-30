@@ -31,6 +31,23 @@ proxies:
       headers:
         Host: authsvc.teams.microsoft.com
     udp: true
+    
+  - name: (T) SG Weekly
+    server: 172.105.117.185
+    port: 80
+    type: vmess
+    uuid: eee80aee-738c-4255-9a4e-9fef076b245a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: tsel.me
+    network: ws
+    ws-opts: 
+      path: /worryfree
+      headers: 
+        Host: tsel.me
+    udp: true
 #   - name: SG OVH #29.11
 #     server: cdn.onlymega.com
 #     port: 443
