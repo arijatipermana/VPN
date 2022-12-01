@@ -5,7 +5,7 @@ proxies:
     type: trojan
     password: bdcea750-7060-11ed-97bc-1239d0255272
     skip-cert-verify: true
-    sni: authsvc.teams.microsoft.com
+    sni: kh.google.com
     udp: true
   - name: SG Dual Stack
     server: sg-atha.bonds.id
