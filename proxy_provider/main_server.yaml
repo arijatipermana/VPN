@@ -1,5 +1,18 @@
 proxies:
-  - name: SG Weekly
+  - name: SG Weekly WS
+    server: cdn.onlymega.com
+    port: 443
+    type: trojan
+    password: bdcea750-7060-11ed-97bc-1239d0255272
+    skip-cert-verify: true
+    sni: trojan1.udpgw.com
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: trojan1.udpgw.com
+    udp: true
+  - name: SG Weekly SSL
     server: trojan1.udpgw.com
     port: 443
     type: trojan
