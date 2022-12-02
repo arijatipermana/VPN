@@ -1,5 +1,5 @@
 proxies:
-  - name: SG Weekly
+  - name: SG Weekly WS
     server: 172.67.73.39
     port: 443
     type: trojan
@@ -11,6 +11,14 @@ proxies:
       path: /howdy
       headers: 
         Host: trojan1.udpgw.com
+    udp: true
+  - name: SG Weekly SSL
+    server: trojan1.udpgw.com
+    port: 443
+    type: trojan
+    password: bdcea750-7060-11ed-97bc-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
     udp: true
   - name: SG Dual Stack
     server: 172.67.73.39
