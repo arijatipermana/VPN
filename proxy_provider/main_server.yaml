@@ -1,6 +1,6 @@
 proxies:
   - name: SG Weekly
-    server: cdn.onlymega.com
+    server: 172.67.73.39
     port: 443
     type: trojan
     password: bdcea750-7060-11ed-97bc-1239d0255272
