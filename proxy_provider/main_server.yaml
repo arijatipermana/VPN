@@ -1,5 +1,5 @@
 proxies:
-  - name: SG Weekly WS
+  - name: SG Weekly
     server: cdn.onlymega.com
     port: 443
     type: trojan
