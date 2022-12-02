@@ -12,21 +12,18 @@ proxies:
       headers: 
         Host: trojan1.udpgw.com
     udp: true
-  - name: SG Weekly SSL
-    server: trojan1.udpgw.com
-    port: 443
-    type: trojan
-    password: bdcea750-7060-11ed-97bc-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
   - name: SG Dual Stack
-    server: sg-atha.bonds.id
+    server: 172.67.73.39
     port: 443
     type: trojan
     password: 4545d330-5dad-11ed-92ad-1239d0255272
     skip-cert-verify: true
-    sni: authsvc.teams.microsoft.com
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg-atha.bonds.id
     udp: true
   - name: ID AMP
     server: 172.67.73.39
