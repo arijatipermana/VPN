@@ -5,7 +5,7 @@ proxies:
     type: trojan
     password: 321ad100-69bc-11ed-b38e-1239d0255272
     skip-cert-verify: true
-    sni: authsvc.teams.microsoft.com
+    sni: gz0.googleusercontent.com
     udp: true
   - name: HE 02
     server: sg1-trojan.bonds.id
@@ -13,7 +13,7 @@ proxies:
     type: trojan
     password: 1517cd20-69bc-11ed-91c1-1239d0255272
     skip-cert-verify: true
-    sni: authsvc.teams.microsoft.com
+    sni: gz0.googleusercontent.com
     udp: true
     
 #   - name: HE 02
