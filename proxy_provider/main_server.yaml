@@ -48,7 +48,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /u/opentunnel.net-7dec
+      path: /u/opentunnel.net-15dec1
       headers:
         Host: gz0.googleusercontent.com
     udp: true
