@@ -1,20 +1,32 @@
 proxies:
-  - name: Herza 01
+  - name: Herza
     server: idtj-herza.bonds.id
     port: 443
     type: trojan
-    password: 52451de0-69bc-11ed-a1f5-1239d0255272
+    password: 86fa0d60-76b9-11ed-8756-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: Herza 02
-    server: idtj-herza.bonds.id
+  - name: IKD
+    server: idtj-ikd.bonds.id
     port: 443
     type: trojan
-    password: 89495e40-69bc-11ed-898b-1239d0255272
+    password: 8b46d8a0-76b9-11ed-9bc0-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+    
+    
+    
+    
+#   - name: Herza 02
+#     server: idtj-herza.bonds.id
+#     port: 443
+#     type: trojan
+#     password: 89495e40-69bc-11ed-898b-1239d0255272
+#     skip-cert-verify: true
+#     sni: gz0.googleusercontent.com
+#     udp: true
 
 #   - name: Herza 02
 #     server: 172.67.73.39
