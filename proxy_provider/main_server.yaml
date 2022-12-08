@@ -20,22 +20,22 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: ID AMP WS
-    server: 172.67.73.39
-    port: 443
-    type: vmess
-    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-    alterId: 16
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: idv-3.openv2ray.com
-    network: ws
-    ws-opts:
-      path: /u/opentunnel.net-7dec
-      headers:
-        Host: idv-3.openv2ray.com
-    udp: true
+#   - name: ID AMP WS
+#     server: 172.67.73.39
+#     port: 443
+#     type: vmess
+#     uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+#     alterId: 16
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: idv-3.openv2ray.com
+#     network: ws
+#     ws-opts:
+#       path: /u/opentunnel.net-7dec
+#       headers:
+#         Host: idv-3.openv2ray.com
+#     udp: true
   - name: ID AMP SSL
     server: idv-3.openv2ray.com
     port: 443
@@ -52,19 +52,19 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: SG Dual Stack
-    server: 172.67.73.39
-    port: 443
-    type: trojan
-    password: 4545d330-5dad-11ed-92ad-1239d0255272
-    skip-cert-verify: true
-    sni: sg-atha.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg-atha.bonds.id
-    udp: true
+#   - name: SG Dual Stack
+#     server: 172.67.73.39
+#     port: 443
+#     type: trojan
+#     password: 4545d330-5dad-11ed-92ad-1239d0255272
+#     skip-cert-verify: true
+#     sni: sg-atha.bonds.id
+#     network: ws
+#     ws-opts: 
+#       path: /howdy
+#       headers: 
+#         Host: sg-atha.bonds.id
+#     udp: true
 
   # Telkomsel
   - name: SG Weekly Tsel
