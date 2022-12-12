@@ -3,20 +3,20 @@ proxies:
     server: 172.67.73.39
     port: 443
     type: trojan
-    password: bdcea750-7060-11ed-97bc-1239d0255272
+    password: 921bd8f0-79e3-11ed-a073-1239d0255272
     skip-cert-verify: true
-    sni: trojan1.udpgw.com
+    sni: trojan2.udpgw.com
     network: ws
     ws-opts: 
       path: /howdy
       headers: 
-        Host: trojan1.udpgw.com
+        Host: trojan2.udpgw.com
     udp: true
   - name: SG Weekly SSL
-    server: trojan1.udpgw.com
+    server: trojan2.udpgw.com
     port: 443
     type: trojan
-    password: bdcea750-7060-11ed-97bc-1239d0255272
+    password: 921bd8f0-79e3-11ed-a073-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
@@ -47,10 +47,10 @@ proxies:
 
   # Telkomsel
   - name: SG Weekly Tsel
-    server: 172.105.117.185
+    server: 139.180.153.237
     port: 80
     type: vmess
-    uuid: eee80aee-738c-4255-9a4e-9fef076b245a
+    uuid: b5bd762f-5340-4a26-a02f-dadfa284aad3
     alterId: 0
     cipher: auto
     tls: false
