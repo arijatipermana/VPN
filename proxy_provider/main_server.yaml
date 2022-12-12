@@ -16,7 +16,7 @@ proxies:
     server: trojan2.udpgw.com
     port: 443
     type: trojan
-    password: 921bd8f0-79e3-11ed-a073-1239d0255272
+    password: b53df900-79e4-11ed-9ce0-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
