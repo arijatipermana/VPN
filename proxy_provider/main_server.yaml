@@ -20,13 +20,21 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: SG Dual Stack
-    server: sg-atha.bonds.id
+  - name: SG Vmess 1
+    server: sg.vmess1.xservs.xyz
     port: 443
-    type: trojan
-    password: 3ce997b0-78b1-11ed-bfcd-1239d0255272
+    type: vmess
+    uuid: 76768b91-8a5b-48e2-a76c-02b7a447ee75
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: gz0.googleusercontent.com
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: gz0.googleusercontent.com
     udp: true
 #   - name: ID AMP WS
 #     server: 172.67.73.39
