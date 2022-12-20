@@ -20,21 +20,13 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: SG Vmess 1
-    server: sg.vmess1.xservs.xyz
+  - name: SG HE MUX
+    server: sg6-trojan.bonds.id
     port: 443
-    type: vmess
-    uuid: 76768b91-8a5b-48e2-a76c-02b7a447ee75
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: c1396ee0-808a-11ed-a459-1239d0255272
     skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: gz0.googleusercontent.com
+    sni: gz0.googleusercontent.com
     udp: true
 #   - name: ID AMP WS
 #     server: 172.67.73.39
