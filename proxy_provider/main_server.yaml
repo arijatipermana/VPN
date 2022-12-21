@@ -3,68 +3,20 @@ proxies:
     server: 172.67.73.39
     port: 443
     type: trojan
-    password: 921bd8f0-79e3-11ed-a073-1239d0255272
+    password: 5c598a30-80fd-11ed-bae9-1239d0255272
     skip-cert-verify: true
-    sni: trojan2.udpgw.com
+    sni: trojan3.udpgw.com
     network: ws
     ws-opts: 
       path: /howdy
       headers: 
-        Host: trojan2.udpgw.com
+        Host: trojan3.udpgw.com
     udp: true
   - name: SG Weekly SSL
-    server: trojan2.udpgw.com
+    server: trojan3.udpgw.com
     port: 443
     type: trojan
-    password: b53df900-79e4-11ed-9ce0-1239d0255272
+    password: 5c598a30-80fd-11ed-bae9-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
-    udp: true
-  - name: SG Contabo #28.12.22
-    server: sg1-ctb.v2rayserv.com
-    port: 443
-    type: vmess
-    uuid: dccb27b1-0d77-43e5-b1e3-11667aff23e1
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-  - name: SG DO #28.12.22
-    server: sgdo1.v2rayserv.com
-    port: 443
-    type: vmess
-    uuid: 128805a6-c925-4d89-b470-ab0d57e065c8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-  - name: ID SSH Ocean #28.12.22
-    server: id1.v2rayserv.com
-    port: 443
-    type: vmess
-    uuid: 053f1c77-a049-44e2-8df7-61de25a2c4c7
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: gz0.googleusercontent.com
     udp: true
