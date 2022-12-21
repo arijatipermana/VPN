@@ -20,61 +20,51 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: SG Vmess 1
-    server: sg.vmess1.xservs.xyz
+  - name: SG Contabo #28.12.22
+    server: sg1-ctb.v2rayserv.com
     port: 443
     type: vmess
-    uuid: 76768b91-8a5b-48e2-a76c-02b7a447ee75
+    uuid: dccb27b1-0d77-43e5-b1e3-11667aff23e1
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: gz0.googleusercontent.com
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /vmess
-      headers: 
+      headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: SG HE MUX
-    server: sg6-trojan.bonds.id
+  - name: SG DO #28.12.22
+    server: sgdo1.v2rayserv.com
     port: 443
-    type: trojan
-    password: c1396ee0-808a-11ed-a459-1239d0255272
-    skip-cert-verify: true
-    sni: gz0.googleusercontent.com
-    udp: true
-#   - name: ID AMP WS
-#     server: 172.67.73.39
-#     port: 443
-#     type: vmess
-#     uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
-#     alterId: 16
-#     cipher: auto
-#     tls: true
-#     skip-cert-verify: true
-#     servername: idv-3.openv2ray.com
-#     network: ws
-#     ws-opts:
-#       path: /u/opentunnel.net-7dec
-#       headers:
-#         Host: idv-3.openv2ray.com
-#     udp: true
-
-  # Telkomsel
-  - name: SG Weekly Tsel
-    server: 139.180.153.237
-    port: 80
     type: vmess
-    uuid: b5bd762f-5340-4a26-a02f-dadfa284aad3
+    uuid: 128805a6-c925-4d89-b470-ab0d57e065c8
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    servername: tsel.me
+    servername: gz0.googleusercontent.com
     network: ws
-    ws-opts: 
-      path: /worryfree
-      headers: 
-        Host: tsel.me
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+  - name: ID SSH Ocean #28.12.22
+    server: id1.v2rayserv.com
+    port: 443
+    type: vmess
+    uuid: 053f1c77-a049-44e2-8df7-61de25a2c4c7
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: gz0.googleusercontent.com
     udp: true
