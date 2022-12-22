@@ -36,11 +36,27 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: ID Herza #29.12
+  - name: ID Herza 1 #29.12
     server: id-herza.vmess.sbs
     port: 443
     type: vmess
     uuid: 3c8e1fe0-81a2-11ed-b830-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /fastssh
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+  - name: ID Herza 2
+    server: id-herza.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: 6ac35320-81a3-11ed-b533-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
