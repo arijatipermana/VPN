@@ -3,7 +3,7 @@ proxies:
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
-    password: 064d4c10-76b9-11ed-be28-1239d0255272
+    password: b50abbc0-843e-11ed-83bb-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
@@ -11,7 +11,7 @@ proxies:
     server: sgovh-trojan.bonds.id
     port: 443
     type: trojan
-    password: 2c059c70-76b9-11ed-944b-1239d0255272
+    password: cb7b68c0-843e-11ed-8f4d-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
@@ -19,7 +19,7 @@ proxies:
     server: sg-atha.bonds.id
     port: 443
     type: trojan
-    password: 23cb59e0-76b9-11ed-9156-1239d0255272
+    password: d3092e30-843e-11ed-b4f3-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
