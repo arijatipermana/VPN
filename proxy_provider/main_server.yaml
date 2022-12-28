@@ -36,22 +36,22 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-#   - name: ID Biznet #29.12
-#     server: id-lb.vhax.net
-#     port: 443
-#     type: vmess
-#     uuid: 6fea1649-425b-4092-bf53-29792152c925
-#     alterId: 0
-#     cipher: auto
-#     tls: true
-#     skip-cert-verify: true
-#     servername: gz0.googleusercontent.com
-#     network: ws
-#     ws-opts:
-#       path: /sshkit/29des22/63a3c3620d0a8/
-#       headers:
-#         Host: gz0.googleusercontent.com
-#     udp: true
+  - name: Biznet #2.1
+    server: id-lb.vhax.net
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /sshkit/2jan23/63a8d07b0648f/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
 #   - name: ID AMP #2.1
 #     server: idv-3.openv2ray.com
 #     port: 443
