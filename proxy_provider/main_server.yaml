@@ -36,7 +36,7 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: Biznet #2.1
+  - name: ID Biznet #2.1
     server: id-lb.vhax.net
     port: 443
     type: vmess
