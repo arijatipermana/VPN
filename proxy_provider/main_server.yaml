@@ -12,11 +12,19 @@ proxies:
 #       headers: 
 #         Host: trojan3.udpgw.com
 #     udp: true
-  - name: SG Weekly
+  - name: SG Weekly Old
     server: trojan3.udpgw.com
     port: 443
     type: trojan
     password: 5c598a30-80fd-11ed-bae9-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+  - name: SG Weekly New
+    server: trojan1.udpgw.com
+    port: 443
+    type: trojan
+    password: 29550410-8827-11ed-9684-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
