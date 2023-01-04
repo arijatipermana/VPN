@@ -20,7 +20,7 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
-  - name: HE V2Ray
+  - name: SG HE # 11
     server: sg1.v2-ray.com
     port: 443
     type: vmess
@@ -36,23 +36,7 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: HE Vmess
-    server: sg-he1.vmess.sbs
-    port: 443
-    type: vmess
-    uuid: 191f5030-8c0e-11ed-b435-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /fastssh
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-  - name: SG OVH #2.1
+  - name: SG OVH #11
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -68,7 +52,7 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-  - name: ID Biznet #2.1
+  - name: ID Biznet #11
     server: id-lb.vhax.net
     port: 443
     type: vmess
