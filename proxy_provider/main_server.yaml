@@ -32,7 +32,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/7jan/63af453b70618/
+      path: /sshkit/11jan/63b53d26661cd/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -48,7 +48,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/7jan/63af45444e400/
+      path: /sshkit/11jan/63b53d371a947/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
