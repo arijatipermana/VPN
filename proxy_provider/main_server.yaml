@@ -21,7 +21,7 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
   - name: SG HE # 11
-    server: sg1.v2-ray.com
+    server: 103.253.24.98
     port: 443
     type: vmess
     uuid: 407e8180-8c0d-11ed-b635-205c6d5f5d78
