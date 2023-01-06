@@ -1,17 +1,4 @@
 proxies:
-#   - name: SG Weekly WS
-#     server: 172.67.73.39
-#     port: 443
-#     type: trojan
-#     password: 5c598a30-80fd-11ed-bae9-1239d0255272
-#     skip-cert-verify: true
-#     sni: trojan3.udpgw.com
-#     network: ws
-#     ws-opts: 
-#       path: /howdy
-#       headers: 
-#         Host: trojan3.udpgw.com
-#     udp: true
   - name: SG Weekly
     server: trojan1.udpgw.com
     port: 443
@@ -21,10 +8,10 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
   - name: SG AMP # 13
-    server: sg-amp.vmess.sbs
+    server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 0b9d38f0-8d8e-11ed-b431-205c6d5f5d78
+    uuid: e9e0eb50-8d8f-11ed-b939-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
