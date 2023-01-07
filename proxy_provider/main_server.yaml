@@ -76,21 +76,3 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-    
-  # Others
-  - name: MS Azure // 09.01.23
-    server: jp-vip.cloud-cmgyxz.my.id
-    port: 443
-    type: vmess
-    uuid: d7ca523d-f01f-40e0-b4c9-e10a2c4a858c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /vmess-tls
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
