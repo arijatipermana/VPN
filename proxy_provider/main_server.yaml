@@ -1,4 +1,5 @@
 proxies:
+  # Howdy
   - name: SG Weekly
     server: trojan1.udpgw.com
     port: 443
@@ -7,6 +8,8 @@ proxies:
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
+    
+  # FastSSH
   - name: SG AMP # 13
     server: sg-atha.v2-ray.com
     port: 443
@@ -39,6 +42,8 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
+    
+  # SSHKIT
   - name: SG OVH #11
     server: sg-lb.vhax.net
     port: 443
@@ -68,6 +73,24 @@ proxies:
     network: ws
     ws-opts:
       path: /sshkit/11jan/63b53d371a947/
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
+  # Others
+  - name: MS Azure // 09.01.23
+    server: jp-vip.cloud-cmgyxz.my.id
+    port: 443
+    type: vmess
+    uuid: d7ca523d-f01f-40e0-b4c9-e10a2c4a858c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /vmess-tls
       headers:
         Host: gz0.googleusercontent.com
     udp: true
