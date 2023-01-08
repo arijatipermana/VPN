@@ -4,10 +4,10 @@ proxy-groups:
   - name: Servers
     type: select
     proxies:
-      - Universal
+      - Manual
       - Singapore
       - Indonesia
-  - name: Universal
+  - name: Manual
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -70,8 +70,8 @@ rule-providers:
 #     interval: 86400
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
-  - PROCESS-NAME,com.whatsapp,Indonesia
-  - RULE-SET,WA,Indonesia
+  - PROCESS-NAME,com.whatsapp,DIRECT
+  - RULE-SET,WA,DIRECT
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
