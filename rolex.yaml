@@ -70,7 +70,7 @@ rule-providers:
 #     interval: 86400
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
-  - RULE-SET,Whatsapp,ID LB
+  - RULE-SET,Whatsapp,SG LB
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
