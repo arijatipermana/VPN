@@ -86,8 +86,8 @@ rule-providers:
 #     interval: 86400
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
-  - PROCESS-NAME,com.whatsapp,WhatsApp
-  - RULE-SET,WA,WhatsApp
+  - PROCESS-NAME,com.whatsapp,SG LB
+  - RULE-SET,WA,SG LB
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
