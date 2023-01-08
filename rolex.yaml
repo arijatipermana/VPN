@@ -58,7 +58,7 @@ proxy-providers:
 rule-providers:
   Whatsapp:
     type: http
-    behavior: classical
+    behavior: domain
     path: "./rule_provider/Whatsapp.yaml"
     url: https://rules.kr328.app/whatsapp.yaml
     interval: 86400
