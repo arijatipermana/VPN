@@ -1,10 +1,18 @@
 proxies:
   # Howdy
-  - name: SG Dual Stack
+  - name: WA AMP
     server: sg-atha.bonds.id
     port: 443
     type: trojan
     password: 9b54efd0-8eef-11ed-a922-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+  - name: WA HE
+    server: sg1-trojan.bonds.id
+    port: 443
+    type: trojan
+    password: 9d996740-8ef4-11ed-baaf-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
