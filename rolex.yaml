@@ -7,6 +7,7 @@ proxy-groups:
       - Universal
       - SG LB
       - ID LB
+      - WhatsApp
   - name: Universal
     type: select
     url: http://www.gstatic.com/generate_204
@@ -27,6 +28,12 @@ proxy-groups:
     interval: 300
     use:
       - "3. Group ID"
+  - name: WhatsApp
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "4. WhatsApp"
 proxy-providers:
   "1. Main Server":
     type: http
@@ -55,6 +62,15 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
+  "4. WhatsApp":
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/whatsapp.yaml"
+    interval: 3600
+    path: ./proxy_provider/whatsapp.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
 rule-providers:
   Whatsapp:
     type: http
@@ -70,7 +86,7 @@ rule-providers:
 #     interval: 86400
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
-  - RULE-SET,Whatsapp,SG LB
+  - RULE-SET,Whatsapp,WhatsApp
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
