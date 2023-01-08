@@ -56,7 +56,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 300
 rule-providers:
-  WA:
+  WhatsApp:
     type: http
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
@@ -71,7 +71,7 @@ rule-providers:
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
   - PROCESS-NAME,com.whatsapp,DIRECT
-  - RULE-SET,WA,DIRECT
+  - RULE-SET,WhatsApp,DIRECT
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
