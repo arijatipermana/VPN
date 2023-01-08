@@ -5,35 +5,28 @@ proxy-groups:
     type: select
     proxies:
       - Universal
-      - SG LB
-      - ID LB
-      - WhatsApp
+      - Singapore
+      - Indonesia
   - name: Universal
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "1. Main Server"
-  - name: SG LB
+  - name: Singapore
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "2. Group SG"
-  - name: ID LB
+  - name: Indonesia
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "3. Group ID"
-  - name: WhatsApp
-    type: select
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - "4. WhatsApp"
 proxy-providers:
   "1. Main Server":
     type: http
@@ -62,15 +55,6 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  "4. WhatsApp":
-    type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/whatsapp.yaml"
-    interval: 3600
-    path: ./proxy_provider/whatsapp.yaml
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
 rule-providers:
   WA:
     type: http
@@ -86,8 +70,8 @@ rule-providers:
 #     interval: 86400
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
-  - PROCESS-NAME,com.whatsapp,SG LB
-  - RULE-SET,WA,SG LB
+  - PROCESS-NAME,com.whatsapp,Indonesia
+  - RULE-SET,WA,Indonesia
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
