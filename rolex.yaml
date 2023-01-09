@@ -5,10 +5,17 @@ proxy-groups:
     type: select
     proxies:
       - Manual
+      - Fallback
       - Singapore
       - Indonesia
   - name: Manual
     type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "1. Main Server"
+  - name: Fallback
+    type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
