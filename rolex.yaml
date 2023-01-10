@@ -62,13 +62,13 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-rule-providers:
-  WhatsApp:
-    type: http
-    behavior: classical
-    path: "./rule_provider/whatsapp.yaml"
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/rule_provider/whatsapp.yaml"
-    interval: 86400
+# rule-providers:
+#   WhatsApp:
+#     type: http
+#     behavior: classical
+#     path: "./rule_provider/whatsapp.yaml"
+#     url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/rule_provider/whatsapp.yaml"
+#     interval: 86400
 #   Blacklist:
 #     type: http
 #     behavior: domain
@@ -78,7 +78,7 @@ rule-providers:
 rules:
 #   - RULE-SET,Blacklist,REJECT,no-resolve
 #   - RULE-SET,WhatsApp,DIRECT
-  - RULE-SET,WhatsApp,Indonesia
+#   - RULE-SET,WhatsApp,Indonesia
   - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
   - IP-CIDR6,::1/128,REJECT,no-resolve
   - MATCH,Servers
