@@ -1,10 +1,10 @@
 proxies:
-  # Howdy
+  # Howdy 20
   - name: SG Weekly
-    server: trojan1.udpgw.com
+    server: trojan2.udpgw.com
     port: 443
     type: trojan
-    password: 29550410-8827-11ed-9684-1239d0255272
+    password: 9b2bfac0-9092-11ed-8782-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
