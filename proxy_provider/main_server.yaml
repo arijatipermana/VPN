@@ -1,10 +1,10 @@
 proxies:
   # Howdy 20
-  - name: SG Weekly
-    server: trojan2.udpgw.com
+  - name: SG DS
+    server: sg-atha.bonds.id
     port: 443
     type: trojan
-    password: 9b2bfac0-9092-11ed-8782-1239d0255272
+    password: e8aafd60-92c3-11ed-88a7-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
