@@ -14,7 +14,7 @@ proxies:
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: b01ad3a0-9056-11ed-b432-205c6d5f5d78
+    uuid: a1f79b50-9277-11ed-b537-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
