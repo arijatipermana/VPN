@@ -30,7 +30,7 @@ proxies:
     server: sg1.v2-ray.com
     port: 443
     type: vmess
-    uuid: d4952300-9056-11ed-b433-205c6d5f5d78
+    uuid: 952f78e0-9367-11ed-b735-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
