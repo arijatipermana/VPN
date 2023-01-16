@@ -9,12 +9,12 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  # FastSSH 17
+  # FastSSH 24
   - name: SG AMP
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: 98f95bd0-9598-11ed-b537-205c6d5f5d78
+    uuid: 5f209180-95eb-11ed-b936-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
@@ -30,7 +30,7 @@ proxies:
     server: sg1.v2-ray.com
     port: 443
     type: vmess
-    uuid: 952f78e0-9367-11ed-b735-205c6d5f5d78
+    uuid: a4fb99b0-95eb-11ed-b839-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
@@ -56,7 +56,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/17jan23/63bc70245073e/
+      path: /sshkit/240123/63c5cd9608dd0/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
@@ -72,7 +72,7 @@ proxies:
     servername: gz0.googleusercontent.com
     network: ws
     ws-opts:
-      path: /sshkit/17jan23/63bc70356ebc1/
+      path: /sshkit/240123/63c5cdabf28c4/
       headers:
         Host: gz0.googleusercontent.com
     udp: true
