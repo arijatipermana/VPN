@@ -1,10 +1,10 @@
 proxies:
   # Howdy 20
-  - name: SG DS
-    server: sg-atha.bonds.id
+  - name: SG HE-1
+    server: sg1-trojan.bonds.id
     port: 443
     type: trojan
-    password: e8aafd60-92c3-11ed-88a7-1239d0255272
+    password: 66aa57b0-9598-11ed-9ad5-1239d0255272
     skip-cert-verify: true
     sni: gz0.googleusercontent.com
     udp: true
@@ -14,7 +14,7 @@ proxies:
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
-    uuid: a1f79b50-9277-11ed-b537-205c6d5f5d78
+    uuid: 98f95bd0-9598-11ed-b537-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
