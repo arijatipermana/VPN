@@ -11,10 +11,10 @@ proxies:
     
   # FastSSH 24
   - name: SG AMP
-    server: sg-atha.v2-ray.com
+    server: sg-6.0rd.net
     port: 443
     type: vmess
-    uuid: 5f209180-95eb-11ed-b936-205c6d5f5d78
+    uuid: 24434db0-9658-11ed-b936-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
@@ -27,10 +27,42 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
   - name: SG HE
-    server: sg1.v2-ray.com
+    server: sg-1.0rd.net
     port: 443
     type: vmess
-    uuid: a4fb99b0-95eb-11ed-b839-205c6d5f5d78
+    uuid: db5349e0-9657-11ed-b737-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /fastssh
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+  - name: SG Contabo
+    server: sg-3.0rd.net
+    port: 443
+    type: vmess
+    uuid: 57fdd350-9657-11ed-b834-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /fastssh
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+  - name: SG Melbi
+    server: sg-4.0rd.net
+    port: 443
+    type: vmess
+    uuid: b3cc9810-9657-11ed-b530-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
@@ -43,36 +75,36 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  # SSHKIT
-  - name: SG OVH
-    server: sg-lb.vhax.net
-    port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/240123/63c5cd9608dd0/
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-  - name: ID Biznet
-    server: id-lb.vhax.net
-    port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /sshkit/240123/63c5cdabf28c4/
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
+#     SSHKIT
+#   - name: SG OVH | SSHKIT
+#     server: sg-lb.vhax.net
+#     port: 443
+#     type: vmess
+#     uuid: 6fea1649-425b-4092-bf53-29792152c925
+#     alterId: 0
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: gz0.googleusercontent.com
+#     network: ws
+#     ws-opts:
+#       path: /sshkit/240123/63c5cd9608dd0/
+#       headers:
+#         Host: gz0.googleusercontent.com
+#     udp: true
+#   - name: ID Biznet | SSHKIT
+#     server: id-lb.vhax.net
+#     port: 443
+#     type: vmess
+#     uuid: 6fea1649-425b-4092-bf53-29792152c925
+#     alterId: 0
+#     cipher: auto
+#     tls: true
+#     skip-cert-verify: true
+#     servername: gz0.googleusercontent.com
+#     network: ws
+#     ws-opts:
+#       path: /sshkit/240123/63c5cdabf28c4/
+#       headers:
+#         Host: gz0.googleusercontent.com
+#     udp: true
